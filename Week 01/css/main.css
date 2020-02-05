@@ -2,6 +2,10 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+html {
+    margin: 0em 4em;
+}
+
 body {
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
@@ -14,7 +18,7 @@ section:not([id]) {
     border-top: 1px solid #333;
 }
 
-section h3 {
+section h2 {
     margin-bottom: 0.5em;
 }
 
@@ -112,7 +116,7 @@ label {
 */
 
 h1, 
-h2 {
+h3 {
     font-family: Gelasio, serif;
     text-transform: uppercase;
 }
@@ -125,13 +129,13 @@ h1 {
     letter-spacing: 0.05em;
 }
 
-h2 {
+h3 {
     font-size: 0.75em;
     font-weight: 600;
     letter-spacing: 0.08em;
 }
 
-h3 {
+h2 {
     text-transform: uppercase;
     letter-spacing: 0.04em;
     font-size: 0.875em;
