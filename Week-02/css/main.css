@@ -1,0 +1,279 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+html {
+    margin: 0em 4em;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    padding: 2rem;
+}
+
+section:not([id]) {
+    margin: 1em 0;
+    padding: 0.5em 0;
+    border-top: 1px solid #333;
+}
+
+section h2 {
+    margin-bottom: 0.5em;
+}
+
+section p {
+    margin-top: 0;
+}
+
+section code {
+    background-color: #EEE;
+    display: block;
+    padding: 0.5em 0.75em;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+    /* letter spacing | https://www.w3schools.com/cssref/pr_text_letter-spacing.asp */
+    letter-spacing: 0.05em;
+    display: inline-block;
+    padding: 1em 1.5em;
+    color: #000000;
+    border: 1px solid rgba(0,0,0,0);
+    background-color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: border-color 0.3s ease-out;
+    transition: border-color 0.3s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus {
+    border: 1px solid rgb(0,0,0);
+}
+
+/* Styling for in-text links */
+.link-in-text {
+    color: rgb(173,133,13);
+    /* underline transition | https://markrabey.com/2015/05/17/css-transition-for-text-decoration/ */
+    text-decoration: none;
+    border-bottom: 1px solid rgba(173,133,13,0);
+    -webkit-transition: border-color 0.2s ease-out;
+    transition: border-color 0.2s ease-out;
+}
+
+.link-in-text:hover, .link-in-text:focus {
+    border-bottom: 1px solid rgb(173,133,13);
+}
+
+/* Styling for Submit/Reset button */
+.button-submit-reset {
+    letter-spacing: 0.05em;
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    text-transform: uppercase;
+    color: rgb(0,0,0);
+    text-decoration: none;
+    background-color: rgb(241,234,208);
+    /* offset border | https://webdevtrick.com/css-outline-styles/ */
+    outline: 1px solid rgba(0,0,0,0);
+    outline-offset: 5px;
+    -webkit-transition: outline 0.2s ease-out;
+    transition: outline 0.2s ease-out;
+}
+
+.button-submit-reset:hover, .button-submit-reset:focus {
+    outline: 1px solid rgb(0,0,0);
+    outline-offset: 5px;
+}
+
+/* Styling for text input field */
+label {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+#input-field {
+    display: block;
+    padding: 0.5em 0.8em;
+    font-size: 0.875em;
+    letter-spacing: 0.02em;
+    border: 1px solid rgb(221,218,213);
+}
+
+#input-field:focus {
+    border: 1px solid rgb(0,0,0);
+}
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+h1, 
+h3 {
+    font-family: Gelasio, serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 400;
+    color: rgb(173,133,13);
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+h3 {
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.875em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+}
+
+ul, 
+ol {
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+    padding: 1rem;
+}
+
+.ital {
+	font-style: italic;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Styling for product listing */
+.product-listing {
+    display: inline-block;
+    width: 30%;
+    padding: 1.25em 0.08em;
+    border: 1px solid rgba(0,0,0,0);
+    -webkit-transition: outline 0.2s ease-out;
+    transition: outline 0.2s ease-out;
+}
+
+.product-listing:hover, .product-listing:focus {
+    border: 1px solid rgb(0,0,0);
+    outline-offset: 1px;
+}
+
+.product-listing img {
+    /* centering images | https://www.w3schools.com/howto/howto_css_image_center.asp */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+
+.product-label {
+    text-align: center;
+}
+
+.price, .status {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+}
+
+.status {
+    font-family: 'Public Sans', sans-serif;
+    font-style: oblique;
+    text-transform: none;
+    font-weight: 300;
+    color: rgb(202,24,24);
+}
+
+.product-label img {
+    width: 45%;
+    min-width: 80px;
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for Website Grid */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.product-grid {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+
+.prod-1of3 {
+    flex: 0 1 30%;
+    margin: 1.0875em;
+    padding: 1.25em 0.08em;
+    border: 1px solid rgba(0,0,0,0);
+    -webkit-transition: outline 0.2s ease-out;
+    transition: outline 0.2s ease-out;
+}
+
+.prod-1of3:hover, .prod-1of3:focus {
+    border: 1px solid rgb(0,0,0);
+    outline-offset: 1px;
+}
+
+.prod-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Styling for colour swatches */
+.colour-swatch {
+    display: inline-block;
+    outline: 1px solid #000000;
+    outline-offset: 5px;
+    padding: 3em;
+    margin: 1em; 
+}
+
+#white {
+    background-color: rgb(255,255,255);
+}
+
+#grey {
+    background-color: rgb(221,218,213);
+}
+
+#light-gold {
+    background-color: rgb(241,234,208);
+}
+
+#gold {
+    background-color: rgb(173,133,13);
+}
+
+#red {
+    background-color: rgb(202,24,24);
+}
+
+#black {
+    background-color: rgb(0,0,0);
+}
