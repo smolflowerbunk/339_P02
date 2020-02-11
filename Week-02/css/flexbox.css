@@ -1,30 +1,38 @@
-/* Referenced from Paul Brokenshire's IAT339 2020 course materials */
-
 *, *::after, *::before {
 	box-sizing: border-box;
 }
 
-.box {
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-
+.product-grid {
+    display: -webkit-inline-flex;
+	display: -ms-inline-flex;
+    display: inline-flex;
+    
     -webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-
-	justify-content: space-around;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    margin: 1em;
+    justify-content: space-around;
 }
 
-.box-item-image {
-	width: 100%;
-	flex: 3, 1, 500px;
+.product-3col {
+    flex: 0 1 30%;
+    margin: 1.0875em;
+    padding: 1.25em 0.08em;
+    border: 1px solid rgba(0,0,0,0);
+    -webkit-transition: outline 0.2s ease-out;
+    transition: outline 0.2s ease-out;
 }
 
-/*@media (max-width: 73em) {
+.product-3col:hover, .product-3col:focus {
+    border: 1px solid rgb(0,0,0);
+    outline-offset: 1px;
+}
 
-	.box-item-image {
-		width: 200%;
-	}
-
-}*/
+.product-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}

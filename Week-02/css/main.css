@@ -56,6 +56,10 @@ section code {
     border: 1px solid rgb(0,0,0);
 }
 
+.nav-active {
+    color: rgb(173,133,13);
+}
+
 /* Styling for in-text links */
 .link-in-text {
     color: rgb(173,133,13);
@@ -154,10 +158,6 @@ ol {
     padding: 1rem;
 }
 
-.ital {
-	font-style: italic;
-}
-
 /* 
   COMBINED ELEMENTS -------------------
 */
@@ -190,12 +190,12 @@ ol {
     text-align: center;
 }
 
-.price, .status {
+.product-price, .product-status {
     font-family: 'Public Sans', sans-serif;
     font-weight: 300;
 }
 
-.status {
+.product-status {
     font-family: 'Public Sans', sans-serif;
     font-style: oblique;
     text-transform: none;
@@ -210,70 +210,4 @@ ol {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* Styling for Website Grid */
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-
-.product-grid {
-    display: inline-flex;
-    width: 100%;
-    flex-wrap: wrap;
-    margin: 1em;
-}
-
-.prod-1of3 {
-    flex: 0 1 30%;
-    margin: 1.0875em;
-    padding: 1.25em 0.08em;
-    border: 1px solid rgba(0,0,0,0);
-    -webkit-transition: outline 0.2s ease-out;
-    transition: outline 0.2s ease-out;
-}
-
-.prod-1of3:hover, .prod-1of3:focus {
-    border: 1px solid rgb(0,0,0);
-    outline-offset: 1px;
-}
-
-.prod-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-/* Styling for colour swatches */
-.colour-swatch {
-    display: inline-block;
-    outline: 1px solid #000000;
-    outline-offset: 5px;
-    padding: 3em;
-    margin: 1em; 
-}
-
-#white {
-    background-color: rgb(255,255,255);
-}
-
-#grey {
-    background-color: rgb(221,218,213);
-}
-
-#light-gold {
-    background-color: rgb(241,234,208);
-}
-
-#gold {
-    background-color: rgb(173,133,13);
-}
-
-#red {
-    background-color: rgb(202,24,24);
-}
-
-#black {
-    background-color: rgb(0,0,0);
 }
