@@ -1,44 +1,21 @@
 /*
   DEFAULT STYLES
 */
-html {
-    margin: 0em 2em;
-}
 
 body {
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
     padding: 2rem;
+    overflow-x: hidden;
 }
 
-/* --- styling for style guide template
-section:not([id]) {
-    margin: 1em 0;
-    padding: 0.5em 0;
-    border-top: 1px solid #333;
-}
 
-section h2 {
-    margin-bottom: 0.5em;
-}
-
-section p {
-    margin-top: 0;
-}
-
-section code {
-    background-color: #EEE;
-    display: block;
-    padding: 0.5em 0.75em;
-}
-*/
 
 /* 
-  INTERACTIVE ELEMENTS
+    NAVIGATION ELEMENTS ---------------------
 */
-
-/* Styling for navigation*/
 .top-nav {
+    margin: 0em 2em;
     padding-bottom: 1em;
     border-bottom: 1px solid rgb(221,218,213);
 }
@@ -66,6 +43,34 @@ section code {
 .nav-active {
     color: rgb(173,133,13);
 }
+
+.bottom-nav {
+    /* full-width nav background | https://css-tricks.com/full-browser-width-bars/#article-header-id-0 */
+    margin: 10em -50em -50em -50em;
+    padding: 3em 50em 5em 50em;
+    background: rgb(241,234,208);
+}
+
+.bottom-nav a {
+    font-size: 0.875em;
+    margin: 0 1em 1em 1em;
+    text-decoration: none;
+    color: rgb(0,0,0);
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    -webkit-transition: border-color 0.2s ease-out;
+    transition: border-color 0.2s ease-out;
+}
+
+.bottom-nav a:hover, .bottom-nav a:focus {
+    border-bottom: 1px solid rgb(0,0,0);
+}
+
+
+
+/* 
+  LINKS, BUTTONS AND FORMS --------------------
+*/
 
 /* Styling for in-text links */
 .link-in-text {
@@ -120,12 +125,19 @@ label {
     border: 1px solid rgb(0,0,0);
 }
 
+/* Styling for quantity drop-down */
+select {
+    margin-right: 2em;
+}
+
 #select-size {
     padding: 0.75em 1.5em;
 }
 
+
+
 /* 
-  TEXT ELEMENTS
+  TEXT STYLING --------------------------
 */
 
 h1, 
@@ -145,9 +157,14 @@ h1 {
 .logo {
     font-size: 1.5em;
     letter-spacing: 0em;
-    padding: 0.5em 0.875em;
+    padding: 0.875em 1em;
     outline: 1px solid rgb(0,0,0);
-    outline-offset: 5px;
+}
+
+.product-name {
+    color: rgb(173,133,13);
+    font-size: 1.5em;
+    text-align: left;
 }
 
 h1 a {
@@ -169,8 +186,10 @@ h3 {
 }
 
 p {
+    font-weight: 300;
     font-size: 0.8em;
     letter-spacing: 0.02em;
+    line-height: 1.5em;
 }
 
 .subhead-paragraph {
@@ -192,8 +211,10 @@ ol {
     margin-top: 4em;
 }
 
+
+
 /* 
-  COMBINED ELEMENTS
+  BODY ELEMENTS ------------------------------
 */
 
 /* Styling for grid */
@@ -243,106 +264,7 @@ ol {
     color: rgb(202,24,24);
 }
 
-
-/*
-  HOME PAGE STYLING -------------------
-*/
-
-/* have not figured out yet
-* {
-    box-sizing: border-box;
-]
-
-.carousel-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-}
-
-.slides {
-    display: none;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -0.08em;
-    padding: 0.6em;
-    color: white;
-    font-weight: 600;
-    font-size: 1em;
-    transition: 0.6s ease;
-    border-radius: 0 0.02em 0.02em 0;
-    user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 0.02em 0 0 0.02em;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 0.8em;
-  padding: 0.6em 0.8em;
-  position: absolute;
-  top: 0;
-}
-
-.dot {
-  cursor: pointer;
-  height: 0.03em;
-  width: 0.03em;
-  margin: 0 0.01em;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}*/
-
-/* carousel styling referenced from https://www.w3schools.com/howto/howto_js_slideshow.asp */
-
-.carousel-img {
-    max-width: 100%;
-}
-
-
-/* 
-  PRODUCT PAGE STYLING -------------------
-*/
-
-.product-name {
-    color: rgb(173,133,13);
-    font-size: 1.5em;
-    letter-spacing: 0.05em;
-}
+/* Styling for product page */
 
 .item-img {
     height: auto;
