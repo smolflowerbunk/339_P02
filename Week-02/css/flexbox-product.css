@@ -23,7 +23,7 @@
 	flex: 1 1 18rem;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 70rem) {
 	.product-flexbox {
 		flex-direction: column;
 	}
