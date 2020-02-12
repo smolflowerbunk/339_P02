@@ -95,6 +95,66 @@
 }
 
 
+/* ABOUT + CONTACT PAGES */
+.about-flexbox, .contact-flexbox {
+    /* flexbox basics | https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox */
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+
+.contact-basic-info, .contact-other-info {
+    padding: 0 10em;
+    max-width: 100%;
+    justify-content: space-around;
+}
+
+.about-img {
+    height: auto;
+    max-width: 100%;
+}
+
+.about-info {
+    flex: 1 1 18rem;
+    padding: 0 5em;
+    max-width: 50%;
+}
+
+.about-img, .about-info, .contact-info {
+    margin-right: auto;
+    margin-left: auto;
+    /* center align imaging referenced from https://www.w3schools.com/howto/howto_css_image_center.asp */
+}
+
+.contact-info {
+    flex: 1 1 18rem;
+    padding: 0 5em;
+    max-width: 50%;
+}
+
+.contact-form {
+    flex: 1 1 18rem;
+    padding: 0 5em;
+    max-width: 50%;
+}
+
+.contact-info, .contact-form, .contact-fields {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* PAYMENT INFORMATION PAGE */
+.payment-info {
+    margin: 0 auto;
+}
+
+
 /* MEDIA QUERIES */
 @media (max-width: 70rem) {
 	.product-flexbox {
@@ -174,4 +234,33 @@
         display: block;
         width: auto;
     }
+}
+
+@media (max-width: 70rem) {
+    .about-flexbox {
+        flex-direction: column;
+    }
+
+    .about-info {
+        padding: 0 1em;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 70rem) {
+    .contact-flexbox {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        padding: 0 2em;
+        max-width: 100%;
+    }
+
+    .contact-form {
+        padding: 0 2em;
+        max-width: 100%;
+    }
+
 }
