@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>Product | petit amours</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Gelasio:400,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Public+Sans:200,300,300i,400,400i,500,500i&display=swap" rel="stylesheet">
+	<!-- Fonts used:
+			Gelasio (Google Fonts) from https://fonts.google.com/specimen/Gelasio 		
+			Public Sans (Google Fonts) from https://fonts.google.com/specimen/Public+Sans
+	-->
+
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/flexbox.css" rel="stylesheet">
+	<link href="css/flexbox-product.css" rel="stylesheet">
+
+	<!-- not working; i don't get it
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	Used for collapsible accordion information referenced from https://www.w3schools.com/bootstrap/bootstrap_collapse.asp 
+
+	-->
+</head>
+
+<body>
+	<!-- NAVIGATION HERE -->
+
+	<div class="product-flexbox">
+
+		<!-- product images -->
+		<div class="product-img">
+			<img class="item-img" src="img/item-img.jpg" alt="Passionfruit Chocolate">
+		</div>
+
+		<!-- product information -->
+		<div class="product-info">
+			<h3 class="product-name">Product 1</h3>
+			<h2>$16.00</h2>
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p><em>Potential allergen description.<em></p>
+
+			<div>
+				<select id="select-size">
+					<option value="0">SELECT SIZE</option>
+					<option value="1">Box of 6</option>
+					<option value="2">Box of 12</option>
+					<option value="3">Box of 24</option>
+				</select>
+				<!-- Custom Select Box referenced from https://www.w3schools.com/howto/howto_custom_select.asp -->
+
+				<a href="#" class="button-submit-reset">Add to Cart</a>
+			</div>
+
+			<!-- flavour specifics information + ingredient list -->
+			<div class="container">
+				<h3>Additional Information</h3>
+				<div class="dropdown-group" id="accordion">
+
+					<div class="dropdown dropdown-default">
+						<div class="dropdown-heading">
+							<h3><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Flavour Specifics</a></h3>
+						</div>
+						<div id="collapse1" class="dropdown-collapse collapse in">
+							<div class="dropdown-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="dropdown dropdown-default">
+						<div class="dropdown-heading">
+							<h3><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Ingredient List</a></h3>
+						</div>
+						<div id="collapse2" class="dropdown-collapse collapse in">
+							<div class="dropdown-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- end of drop downs -->
+
+		</div> <!-- end of product information -->
+			
+	</div> <!-- end of flexbox -->
+	
+</body>
+
+</html>
