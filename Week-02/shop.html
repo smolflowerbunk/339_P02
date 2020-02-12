@@ -17,61 +17,80 @@
     </head>
     
     <body>
-        <nav>
-            <a class="button-nav nav-active" href="shop.html">Shop</a>
-            <a class="button-nav" href="about.html">About</a>
-            <a class="button-nav" href="contact.html">Contact</a>
-            <a class="button-nav" href="cart.html">Cart</a>
-        </nav>
+        <div class="top-nav">
+            <h1 class="logo"><a href="home.html">petit amours</a></h1>
+            <nav class="nav-main">
+                <a class="button-nav nav-active" href="shop.html">Shop</a>
+                <a class="button-nav" href="about.html">About</a>
+                <a class="button-nav" href="contact.html">Contact</a>
+                <a class="button-nav" href="cart.html">Cart</a>
+            </nav>
+        </div>
         
-        <div class="heading">
+        <div class="page-heading">
             <h1>Single Chocolates</h1>
             <p class="subhead-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     
         <div class="product-grid">
-            <div class="product-3col product-item">
-                <img class="item-img" src="img/#" alt="Passionfruit Chocolate">
-                
-                <div class="item-label">
-                    <h3>Passionfruit Swirl</h3>
-                        <p class="item-info">$16.00</p>
-                        <p class="item-status">Only a few left!</p>
-                        <p class="item-info">★★★★☆</p>
-                </div>
-            </div>
-            
-            <div class="product-3col product-item">
-                <img class="item-img" src="img/#" alt="Olive Oil Chocolate">
+            <!--- turn div into link | https://css-tricks.com/snippets/jquery/make-entire-div-clickable/ -->
+            <a href="#">
+                <div class="product-3col product-item">
+                    <img src="img/#" alt="Passionfruit Chocolate">
 
-                <div class="item-label">
-                    <h3>Olive Oil Infusion</h3>
-                        <p class="item-info sale">$8.00</p>
-                        <p class="item-status">Seasonal Clearance</p>
-                        <p class="item-info">★★★★☆</p>
+                    <div class="item-label">
+                        <h3>Passionfruit Swirl</h3>
+                            <p class="item-info">$16.00</p>
+                            <p class="item-status">Only a few left!</p>
+                            <p class="item-info">★★★★☆</p>
+                    </div>
                 </div>
-            </div>
+            </a>
             
-            <div class="product-3col product-item">
-                <img class="item-img" src="img/#" alt="Lemon Lime Chocolate">
+            <a href="#">
+                <div class="product-3col product-item">
+                    <img src="img/#" alt="Olive Oil Chocolate">
 
-                <div class="item-label">
-                    <h3>Citrus Burst</h3>
-                        <p class="item-info">$16.00</p>
-                        <p class="item-info">★★★★★</p>
+                    <div class="item-label">
+                        <h3>Olive Oil Infusion</h3>
+                            <p class="item-info sale">$8.00</p>
+                            <p class="item-status">Seasonal Clearance</p>
+                            <p class="item-info">★★★★☆</p>
+                    </div>
                 </div>
-            </div>
+            </a>
             
-            <div class="product-3col product-item">
-                <img class="item-img" src="img/#" alt="Raspberry Chocolate">
+            <a href="#">
+                <div class="product-3col product-item">
+                    <img src="img/#" alt="Lemon Lime Chocolate">
 
-                <div class="item-label">
-                    <h3>Raspberry Crunch</h3>
-                        <p class="item-info">$16.00</p>
-                        <p class="item-infos">★★★★☆</p>
+                    <div class="item-label">
+                        <h3>Citrus Burst</h3>
+                            <p class="item-info">$16.00</p>
+                            <p class="item-info">★★★★★</p>
+                    </div>
                 </div>
-            </div>
+            </a>
+            
+            <a href="#">
+                <div class="product-3col product-item">
+                    <img src="img/#" alt="Raspberry Chocolate">
+
+                    <div class="item-label">
+                        <h3>Raspberry Crunch</h3>
+                            <p class="item-info">$16.00</p>
+                            <p class="item-infos">★★★★☆</p>
+                    </div>
+                </div>
+            </a>
         </div>
     
+        <div class="bottom-nav">
+            <nav class="nav-footer">
+                <a href="#">FAQ</a>
+                <a href="#">Shipping and Returns</a>
+                <a href="#">Track Your Order</a>
+            </nav>
+        </div>
     </body>
 </html>

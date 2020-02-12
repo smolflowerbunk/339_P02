@@ -1,6 +1,5 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  DEFAULT STYLES
 */
 html {
     margin: 0em 2em;
@@ -12,6 +11,7 @@ body {
     padding: 2rem;
 }
 
+/* --- styling for style guide template
 section:not([id]) {
     margin: 1em 0;
     padding: 0.5em 0;
@@ -31,18 +31,25 @@ section code {
     display: block;
     padding: 0.5em 0.75em;
 }
-
-
-/* 
-  INTERACTIVE ELEMENTS -------------------
 */
 
-/* Styling for the navigation button */
+/* 
+  INTERACTIVE ELEMENTS
+*/
+
+/* Styling for navigation*/
+.top-nav {
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(221,218,213);
+}
+
 .button-nav {
     /* letter spacing | https://www.w3schools.com/cssref/pr_text_letter-spacing.asp */
     letter-spacing: 0.05em;
-    display: inline-block;
+    text-align: center;
     padding: 1em 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
     color: #000000;
     border: 1px solid rgba(0,0,0,0);
     background-color: #FFFFFF;
@@ -118,7 +125,7 @@ label {
 }
 
 /* 
-  TEXT ELEMENTS -------------------
+  TEXT ELEMENTS
 */
 
 h1, 
@@ -133,6 +140,19 @@ h1 {
     color: rgb(173,133,13);
     text-align: center;
     letter-spacing: 0.05em;
+}
+
+.logo {
+    font-size: 1.5em;
+    letter-spacing: 0em;
+    padding: 0.5em 0.875em;
+    outline: 1px solid rgb(0,0,0);
+    outline-offset: 5px;
+}
+
+h1 a {
+    color: rgb(173,133,13);
+    text-decoration: none;
 }
 
 h2 {
@@ -167,19 +187,24 @@ ol {
 }
 
 /* div for product heading combination */
-.heading {
+.page-heading {
     text-align: center;
+    margin-top: 4em;
 }
 
 /* 
-  COMBINED ELEMENTS -------------------
+  COMBINED ELEMENTS
 */
 
-/* Styling for individual items in grid */
+/* Styling for grid */
+.product-grid a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+
 .product-item {
-    display: inline-block;
-    width: 30%;
-    padding: 1.25em 0.08em;
+    padding: 1em 2em;
+    margin: 1.5em;
     border: 1px solid rgba(0,0,0,0);
     -webkit-transition: outline 0.2s ease-out;
     transition: outline 0.2s ease-out;
@@ -190,6 +215,7 @@ ol {
     outline-offset: 1px;
 }
 
+/* Styling for individual grid product cards */
 .product-item img {
     /* centering images | https://www.w3schools.com/howto/howto_css_image_center.asp */
     display: block;

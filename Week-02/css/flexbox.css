@@ -2,6 +2,30 @@
 	box-sizing: border-box;
 }
 
+.nav-main {
+    display: -webkit-inline-flex;
+	display: -ms-inline-flex;
+    display: inline-flex;
+    
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    float: right;
+}
+
+.top-nav {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+}
+
 .product-grid {
     display: -webkit-inline-flex;
 	display: -ms-inline-flex;
@@ -12,17 +36,24 @@
     flex-wrap: wrap;
     
     width: 100%;
-    margin: 1em;
-    justify-content: left;
+    margin-top: 2em;
+    justify-content: space-between;
+}   
+
+/* last item left-justified | https://stackoverflow.com/questions/18744164/flex-box-align-last-row-to-grid */
+.product-3col::after{
+    flex: auto;
 }
 
-@media (min-width: 70em) {
+@media (min-width: 60em) {
     .product-3col {
         flex: 0 1 30%;
         flex-direction: row;
-
-        margin: 1.0875em;
-        padding: 1.25em 0.08em;
+    }
+    
+    .button-nav {
+        flex: 0 1 20%;
+        flex-direction: row;
     }
     
     .subhead-paragraph {
@@ -31,7 +62,7 @@
     }
 }
 
-@media (max-width: 70em) {
+@media (max-width: 60em) {
     .product-3col {
         flex: 0 1 50%;
         flex-direction: row;
@@ -43,9 +74,24 @@
     }
 }
 
-@media (max-width: 40em) {
+@media (max-width: 55em) {
+    .top-nav {
+        justify-content: center;
+    }
+    
+    .nav-main {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 50em) {
+    .product-grid {
+        justify-content: center;
+    }
     .product-3col {
         flex: 0 1 100%;
+        width: 100%;
         flex-direction: column;
     }
     
