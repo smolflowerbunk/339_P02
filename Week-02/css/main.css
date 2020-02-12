@@ -45,7 +45,7 @@ body {
 }
 
 .bottom-nav {
-    /* full-width nav background | https://css-tricks.com/full-browser-width-bars/#article-header-id-0 */
+    /* full-width nav background | https://css-tricks.com/full-browser-width-bars */
     margin: 18em -50em -50em -50em;
     padding: 3em 50em 5em 50em;
     background: rgb(241,234,208);
