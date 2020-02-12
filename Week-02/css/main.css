@@ -15,7 +15,7 @@ body {
     NAVIGATION ELEMENTS ---------------------
 */
 .top-nav {
-    margin: 0em 2em;
+    margin: 0em 2em 5em 0em;
     padding-bottom: 1em;
     border-bottom: 1px solid rgb(221,218,213);
 }
@@ -46,7 +46,7 @@ body {
 
 .bottom-nav {
     /* full-width nav background | https://css-tricks.com/full-browser-width-bars/#article-header-id-0 */
-    margin: 10em -50em -50em -50em;
+    margin: 18em -50em -50em -50em;
     padding: 3em 50em 5em 50em;
     background: rgb(241,234,208);
 }
@@ -100,6 +100,11 @@ body {
     outline-offset: 5px;
     -webkit-transition: outline 0.2s ease-out;
     transition: outline 0.2s ease-out;
+}
+
+.checkout {
+    padding: 0.75em 3em;
+    float: right;
 }
 
 .button-submit-reset:hover, .button-submit-reset:focus {
@@ -208,7 +213,6 @@ ol {
 /* div for product heading combination */
 .page-heading {
     text-align: center;
-    margin-top: 4em;
 }
 
 
@@ -274,4 +278,11 @@ ol {
 
 .product-info {
     padding: 1.25em 1em;
+}
+
+/* Styling for cart */
+#cart {
+    border-top:1px solid rgb(0,0,0);
+    border-bottom: 1px solid rgb(0,0,0);
+    margin: 0 0 3em 0;
 }
