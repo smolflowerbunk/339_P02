@@ -173,7 +173,7 @@ ol {
   COMBINED ELEMENTS -------------------
 */
 
-/* Styling for product listing */
+/* Styling for individual items in grid */
 .product-item {
     display: inline-block;
     width: 30%;
@@ -197,11 +197,11 @@ ol {
     height: auto;
 }
 
-.product-label {
+.item-label {
     text-align: center;
 }
 
-.product-price, .product-status {
+.item-info, .item-status {
     font-family: 'Public Sans', sans-serif;
     font-weight: 300;
 }
@@ -210,19 +210,7 @@ ol {
     color: rgb(202,24,24);
 }
 
-.product-status {
-    font-family: 'Public Sans', sans-serif;
+.item-status {
     font-style: oblique;
-    text-transform: none;
-    font-weight: 300i;
     color: rgb(202,24,24);
-}
-
-.product-label img {
-    width: 45%;
-    min-width: 80px;
-    max-width: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
