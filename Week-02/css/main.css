@@ -133,12 +133,6 @@ h1 {
     letter-spacing: 0.05em;
 }
 
-h3 {
-    font-size: 0.75em;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-}
-
 h2 {
     text-transform: uppercase;
     letter-spacing: 0.04em;
@@ -146,9 +140,21 @@ h2 {
     font-weight: 500;
 }
 
+h3 {
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
 p {
     font-size: 0.8em;
     letter-spacing: 0.02em;
+}
+
+.subhead-paragraph {
+    font-weight: 200;
+    text-align: center;
+    margin: auto;
 }
 
 ul, 
@@ -156,6 +162,11 @@ ol {
     font-size: 0.8em;
     letter-spacing: 0.02em;
     padding: 1rem;
+}
+
+/* div for product heading combination */
+.heading {
+    text-align: center;
 }
 
 /* 
@@ -203,7 +214,7 @@ ol {
     font-family: 'Public Sans', sans-serif;
     font-style: oblique;
     text-transform: none;
-    font-weight: 300;
+    font-weight: 300i;
     color: rgb(202,24,24);
 }
 
