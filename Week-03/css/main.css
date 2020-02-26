@@ -189,7 +189,7 @@ h1 a {
     text-decoration: none;
 }
 
-h2 {
+h2, .carousel-text {
     text-transform: uppercase;
     letter-spacing: 0.04em;
     font-size: 0.875em;
@@ -300,14 +300,35 @@ ol {
 
 /* Styling for home page */
 .slides {
-    max-width: 100%;
     display: block;
     padding: 0;
+    position: relative;
+    text-align: left;
 }
 
 .carousel-img {
     max-width: 100%;
 }
+
+.carousel-text, .carousel-link {
+    color: white;
+}
+
+.carousel-text { /* referenced from w3schools how to position text over an image */
+    font-size: 2.5em;
+
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, 50%);
+}
+
+.carousel-link {
+    font-size: 0.5em;
+
+}
+
+
 
 /* Styling for contact page */
 textarea {
