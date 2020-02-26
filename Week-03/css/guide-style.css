@@ -1,0 +1,61 @@
+/* Reference page style */
+.ref {
+    margin-bottom: 2em;
+}
+
+section:not([id]) {
+    margin: 1em 0;
+    padding: 0.5em 0;
+    border-top: 1px solid #333;
+}
+
+section h2 {
+    margin-bottom: 0.5em;
+}
+
+.space {
+    margin-bottom: 2em;
+}
+
+section p {
+    margin-top: 0;
+}
+
+section code {
+    background-color: #EEE;
+    display: block;
+    padding: 0.5em 0.75em;
+}
+
+/* Styling for colour swatches */
+.colour-swatch {
+    display: inline-block;
+    outline: 1px solid #000000;
+    outline-offset: 5px;
+    padding: 3em;
+    margin: 1em; 
+}
+
+#white {
+    background-color: rgb(255,255,255);
+}
+
+#grey {
+    background-color: rgb(221,218,213);
+}
+
+#light-gold {
+    background-color: rgb(241,234,208);
+}
+
+#gold {
+    background-color: rgb(173,133,13);
+}
+
+#red {
+    background-color: rgb(202,24,24);
+}
+
+#black {
+    background-color: rgb(0,0,0);
+}
