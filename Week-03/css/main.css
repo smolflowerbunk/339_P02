@@ -27,8 +27,8 @@ body {
     padding: 1em 1.5em;
     margin-top: auto;
     margin-bottom: auto;
-    color: #000000;
-    border: 1px solid rgba(0,0,0,0);
+    color: rgb(0,0,0);
+    border: 1px solid rgb(255,255,255);
     background-color: #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
