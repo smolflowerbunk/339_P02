@@ -132,6 +132,7 @@ label {
     
     letter-spacing: 0.02em;
     border: 1px solid rgb(221,218,213);
+    width: 80%;
 }
 
 .input-field:focus {
@@ -139,7 +140,11 @@ label {
 }
 
 textarea {
+<<<<<<< Updated upstream
     width: 100%;
+=======
+    width: 80%;
+>>>>>>> Stashed changes
 }
 
 /* Styling for quantity drop-down */
@@ -302,15 +307,8 @@ ol {
 .slides {
     max-width: 100%;
     display: block;
-    padding: 0;
 }
 
 .carousel-img {
     max-width: 100%;
 }
-
-/* Styling for contact page */
-textarea {
-    max-width: 100%;
-}
-
