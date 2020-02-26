@@ -291,6 +291,10 @@ ol {
     padding: 1.25em 1em;
 }
 
+.reviews {
+    border-top: 1px solid rgb(221,218,213);
+}
+
 /* Styling for cart */
 #cart {
     border-top:1px solid rgb(0,0,0);
