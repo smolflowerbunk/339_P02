@@ -3,6 +3,19 @@
 }
 
 /* MAIN NAVIGATION BAR */
+.top-nav {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+    
+    flex-flow: row wrap;
+    
+    justify-content: space-between;
+}
+
 .nav-main {
     /* flexbox basics | https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox */
     display: -webkit-inline-flex;
@@ -14,18 +27,6 @@
     flex-wrap: wrap;
     
     float: right;
-}
-
-.top-nav {
-    display: -webkit-flex;
-	display: -ms-flex;
-    display: flex;
-    
-    -webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    
-    justify-content: space-between;
 }
 
 
@@ -59,11 +60,12 @@
     
     -webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    
+    flex-flow: row wrap;
     
     width: 100%;
     margin-top: 2em;
-    justify-content: space-between;
+    justify-content: space-around;
 }   
 
 .product-3col::after{
@@ -160,83 +162,7 @@
 	.product-flexbox {
 		flex-direction: column;
 	}
-}
-
-@media (min-width: 60em) {
-    .product-3col {
-        flex: 0 1 30%;
-        flex-direction: row;
-    }
     
-    .button-nav {
-        flex: 0 1 20%;
-        flex-direction: row;
-    }
-    
-    .subhead-paragraph {
-        display: inline-block;
-        width: 40em;
-    }
-}
-
-@media (max-width: 60em) {
-    .product-3col {
-        flex: 0 1 50%;
-        flex-direction: row;
-    }
-    
-    .subhead-paragraph {
-        display: inline-block;
-        width: 40em;
-    }
-}
-
-@media (max-width: 55em) {
-    .top-nav {
-        justify-content: center;
-    }
-    
-    .nav-main {
-        flex-direction: column;
-        flex: 0 1 100%;
-    }
-    
-    .nav-footer {
-        flex: 0 1 100%;
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (min-width: 50em) {
-    .product-2col {
-        flex: 0 1 50%;
-        flex-direction: row;
-    }
-}
-
-@media (max-width: 50em) {
-    .product-grid {
-        justify-content: center;
-    }
-    
-    .product-3col {
-        flex: 0 1 100%;
-        flex-direction: column;
-    }
-    
-    .product-2col {
-        flex: 0 1 100%;
-        flex-direction: column;
-    }
-    
-    .subhead-paragraph {
-        display: block;
-        width: auto;
-    }
-}
-
-@media (max-width: 70rem) {
     .about-flexbox {
         flex-direction: column;
     }
@@ -245,10 +171,7 @@
         padding: 0 1em;
         max-width: 100%;
     }
-
-}
-
-@media (max-width: 70rem) {
+    
     .contact-flexbox {
         flex-direction: column;
     }
@@ -262,5 +185,50 @@
         padding: 0 2em;
         max-width: 100%;
     }
+}
 
+@media (min-width: 55em) { 
+    .button-nav {
+        flex: 0 1 20%;
+        flex-direction: row;
+    }
+    
+    .subhead-paragraph {
+        display: inline-block;
+        width: 40em;
+    }
+}
+
+@media (max-width: 50em) { 
+    .top-nav {
+        justify-content: center;
+    }
+    
+    .nav-main {
+        flex-direction: column;
+        flex: 1 1 100%;
+    }
+    
+    .nav-footer {
+        flex: 1 1 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .product-2col {
+        flex: 0 1 100%;
+        flex-direction: column;
+    }
+    
+    .subhead-paragraph {
+        display: block;
+        width: auto;
+    }
+}
+
+@media (min-width: 30em) {
+    .product-2col {
+        flex: 0 1 50%;
+        flex-direction: row;
+    }
 }
