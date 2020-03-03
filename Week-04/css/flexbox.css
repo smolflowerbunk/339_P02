@@ -31,20 +31,20 @@
 
 
 /* FOOTER NAVIGATION */
-.nav-footer {
-    display: -webkit-inline-flex;
-	display: -ms-inline-flex;
-    display: inline-flex;
+footer {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
     
     -webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
-.bottom-nav {
-    display: -webkit-flex;
-	display: -ms-flex;
-    display: flex;
+.nav-footer {
+    display: -webkit-inline-flex;
+	display: -ms-inline-flex;
+    display: inline-flex;
     
     -webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
@@ -209,14 +209,16 @@
         flex: 1 1 100%;
     }
     
+    .subhead-paragraph {
+        display: block;
+        width: auto;
+    }
+}
+
+@media (max-width: 40em) {    
     .nav-footer {
         flex: 1 1 100%;
         flex-direction: column;
         text-align: center;
-    }
-    
-    .subhead-paragraph {
-        display: block;
-        width: auto;
     }
 }
