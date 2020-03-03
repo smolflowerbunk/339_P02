@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Style Guide</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Gelasio:400,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Public+Sans:300,300i,400,400i,500,500i&display=swap" rel="stylesheet">
+      
+        <link href="css/flexbox.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/guide-style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="top-nav">
+            <h1 class="logo"><a href="home.html">petit amours</a></h1>
+            <nav class="nav-main">
+                <a class="button-nav" href="shop.html">Shop</a>
+                <a class="button-nav" href="about.html">About</a>
+                <a class="button-nav" href="contact.html">Contact</a>
+                <a class="button-nav" href="cart.html">Cart</a>
+            </nav>
+        </div>
+        
+        <h1>Style Guide</h1>
+
+        <nav>
+
+          <p>
+            Go to:
+            <a class="link-in-text" href="http://www.sfu.ca/~rnlu/IAT339/P01:%20Process/Desktop%20Wireframes">Desktop Wireframes</a>,
+            <a class="link-in-text" href="http://www.sfu.ca/~rnlu/IAT339/P01:%20Process/Mobile%20Wireframes">Mobile Wireframes</a>,
+            <a class="link-in-text" href="#">Style Guide</a>,
+            <a class="link-in-text" href="#interactive_elements">Interactive Elements</a>,
+            <a class="link-in-text" href="#text_elements">Text Elements</a>,
+            <a class="link-in-text" href="#combined_elements">Combined Elements</a>,
+            <a class="link-in-text" href="references.html">References</a>.
+          </p>
+
+        </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+        <h3 class="space">Rendered element:</h3>
+        <a class="button-nav" href="#">Navigation Button</a>
+      </section>
+
+      <section>
+          <h2>In-text link</h2>
+          
+          <h3>CSS selector:</h3>
+          <p>.link-in-text</p>
+          
+          <h3>Sample code:</h3>
+          <code>&lt;p&gt;<br>
+              &lt;a class="link-in-text" href="#"&gt;In-Text Link&lt;/a&gt;<br>
+              &lt;/p&gt;</code>
+          
+          <h3>Rendered Element:</h3>
+          <p><a class="link-in-text" href="#">In-Text Link</a></p>
+      </section>
+
+      <section>
+          <h2>Submit/Reset Buttons</h2>
+          
+          <h3>CSS selector:</h3>
+          <p>.button-submit-reset</p>
+          
+          <h3>Sample code:</h3>
+          <code>&lt;a href="#" class="button-submit-reset"&gt;Add to Cart&lt;/a&gt;</code>
+          
+          <h3>Rendered Element:</h3>
+          <a class="button-submit-reset" href="#">Add to Cart</a>
+      </section>
+
+      <section>
+          <!-- text input field | https://www.w3schools.com/tags/tag_input.asp -->
+          <h2>Text Input Field</h2>
+          
+          <h3>CSS selector:</h3>
+          <p>.input-text</p>
+          
+          <h3>Sample code:</h3>
+          <code>&lt;form&gt;<br>
+              &lt;label for="input-field" class="input-title">Input Title&lt;/label&gt;<br>
+              &lt;input type="text" id="input-field"name="input-field"&gt;<br>
+              &lt;/form&gt;</code>
+          
+          <h3>Rendered Element:</h3>
+          <form><label for="input-field">Input Title</label><input type="text" id="input-field"></form>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings</h2>
+
+        <h3>CSS selector for Heading 1:</h3>
+        <p>h1</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h1&gt;Heading One&lt;/h1&gt;</code>
+
+        <h3>Rendered Element:</h3>
+        <h1>Heading One</h1>
+
+        <h3>CSS selector for Heading 2:</h3>
+        <p>h2</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h2&gt;Heading Two&lt;/h2&gt;</code>
+
+        <h3>Rendered Element:</h3>
+        <h2>Heading Two</h2>
+
+        <h3>CSS selector for Heading 3:</h3>
+        <p>h3</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h3&gt;Heading Three&lt;/h3&gt;</code>
+
+        <h3>Rendered Element:</h3>
+        <h3>Heading Three</h3>
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+          
+        <h3>CSS selector:</h3>
+        <p>p</p>
+
+        <h3>Sample code:</h3>
+          <!--lorem ipsum | https://www.lipsum.com/-->
+        <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</code>
+
+        <h3>Rendered Element:</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <section>
+        <h2>Bulleted Lists</h2>
+        
+        <h3>CSS selector:</h3>
+        <p>ul</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ul&gt;<br>
+            &lt;li&gt;Bullet Item 1&lt;/li&gt;<br>
+            &lt;li&gt;Bullet Item 2&lt;/li&gt;<br>
+            &lt;li&gt;Bullet Item 3&lt;/li&gt;<br>
+            &lt;/ul&gt;</code>
+
+        <h3>Rendered Element:</h3>
+        <ul>
+            <li>Bullet Item 1</li>  
+            <li>Bullet Item 2</li>
+            <li>Bullet Item 3</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+          
+        <h3>CSS selector:</h3>
+        <p>ol</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ol&gt;<br>
+            &lt;li&gt;List Item 1&lt;/li&gt;<br>
+            &lt;li&gt;List Item 2&lt;/li&gt;<br>
+            &lt;li&gt;List Item 3&lt;/li&gt;<br>
+            &lt;/ol&gt;</code>
+
+        <h3>Rendered Element:</h3>
+        <ol>
+            <li>List Item 1</li>  
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+
+        <h3>Sample code:</h3>
+        <code>
+            &lt;div class="top-nav"&gt;<br>
+            &lt;h1 class="logo"&gt;<br>
+            &lt;a href="home.html"&gt;petit amours&lt;/a&gt;<br>
+            &lt;/h1&gt;<br>
+            &lt;nav class="nav-main"&gt;<br>
+            &lt;a class="button-nav" href="#"&gt;About&lt;/a&gt;<br>
+            &lt;a class="button-nav" href="#"&gt;Shop&lt;/a&gt;<br>
+            &lt;a class="button-nav" href="#"&gt;Contact&lt;/a&gt;<br>
+            &lt;a class="button-nav" href="#"&gt;Cart&lt;/a&gt;<br>
+          &lt;/nav&gt;<br>
+          &lt;/div&gt;</code>
+
+        <h3>Rendered Element:</h3>
+          <div class="top-nav">
+            <h1 class="logo"><a href="home.html">petit amours</a></h1>
+            <nav class="nav-main">
+                <a class="button-nav" href="shop.html">Shop</a>
+                <a class="button-nav" href="about.html">About</a>
+                <a class="button-nav" href="contact.html">Contact</a>
+                <a class="button-nav" href="cart.html">Cart</a>
+            </nav>
+        </div>
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+          
+          <h3>Sample code:</h3>
+          <code>&lt;div class="product-listing"&gt;<br>
+              &lt;img src="img/rasp.jpeg" alt="Raspberry Chocolate"&gt;<br>
+              &lt;div class="product-label"&gt;<br>
+                &lt;h2&gt;Raspberry Crunch&lt;/h2&gt;<br>
+                &lt;h2 class="price"&gt;$16.00&lt;/h2&gt;<br>
+                &lt;h2 class="status"&gt;Only a few left!&lt;/h2&gt;<br>
+                &lt;img src="img/rating.png" alt="Product Rating"&gt;<br>
+              &lt;/div&gt;
+         &lt;/div&gt;</code>
+          
+          <h3>Rendered Element:</h3>    
+          <div class="product-grid">
+              <div class="product-3col">
+                  <a href="product.html">
+                      <div class="product-item">
+                            <img src="img/rasp.jpeg" alt="Raspberry Chocolate">
+
+                            <div class="item-label">
+                                <h3>Raspberry Crunch</h3>
+                                    <p class="item-info">$16.00</p>
+                                    <p class="item-status">Only a few left!</p>
+                                    <p class="item-info">★★★★☆</p>
+                            </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </section>
+
+        <section>
+            <h2>Website Grid Structure</h2>
+            
+            <h3>Sample code:</h3>
+            <code>&lt;div class="product-grid"&gt;<br>
+                &lt;div class="product-3col"&gt;<br>
+                    &lt;a href="#"&gt;<br>
+                        &lt;div class="product-item"&gt;<br>
+                              &lt;img src="img/rasp.jpeg" alt="Raspberry Chocolate"&gt;<br>
+                              &lt;div class="item-label"&gt;<br>
+                                    &lt;h2&gt;Raspberry Crunch&lt;/h2&gt;<br>
+                                    &lt;h2 class="item-info"&gt;$16.00&lt;/h2&gt;<br>
+                                    &lt;h2 class="item-status"&gt;Only a few left!&lt;/h2&gt;<br>
+                                    &lt;h2 class="item-info"&gt;★★★★☆&lt;/h2&gt;<br>
+                              &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/a&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div class="product-3col"&gt;<br>
+                    &lt;a href="#"&gt;<br>
+                        &lt;div class="product-item"&gt;<br>
+                              &lt;img src="img/rasp.jpeg" alt="Raspberry Chocolate"&gt;<br>
+                              &lt;div class="item-label"&gt;<br>
+                                    &lt;h2&gt;Raspberry Crunch&lt;/h2&gt;<br>
+                                    &lt;h2 class="item-info"&gt;$16.00&lt;/h2&gt;<br>
+                                    &lt;h2 class="item-status"&gt;Only a few left!&lt;/h2&gt;<br>
+                                    &lt;h2 class="item-info"&gt;★★★★☆&lt;/h2&gt;<br>
+                              &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/a&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div class="product-3col"&gt;<br>
+                        &lt;a href="#"&gt;<br>
+                            &lt;div class="product-item"&gt;<br>
+                                  &lt;img src="img/rasp.jpeg" alt="Raspberry Chocolate"&gt;<br>
+                                  &lt;div class="item-label"&gt;<br>
+                                        &lt;h2&gt;Raspberry Crunch&lt;/h2&gt;<br>
+                                        &lt;h2 class="item-info"&gt;$16.00&lt;/h2&gt;<br>
+                                        &lt;h2 class="item-status"&gt;Only a few left!&lt;/h2&gt;<br>
+                                        &lt;h2 class="item-info"&gt;★★★★☆&lt;/h2&gt;<br>
+                                  &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                        &lt;/a&gt;<br>
+                    &lt;/div&gt;<br></code>
+            
+            <h3>Rendered Element:</h3>
+            <div class="product-grid">
+                <div class="product-3col">
+                  <a href="#">
+                      <div class="product-item">
+                            <img src="img/rasp.jpeg" alt="Raspberry Chocolate">
+
+                            <div class="item-label">
+                                <h3>Raspberry Crunch</h3>
+                                    <p class="item-info">$16.00</p>
+                                    <p class="item-status">Only a few left!</p>
+                                    <p class="item-info">★★★★☆</p>
+                            </div>
+                      </div>
+                  </a>
+                </div>
+                
+                <div class="product-3col">
+                  <a href="#">
+                      <div class="product-item">
+                            <img src="img/rasp.jpeg" alt="Raspberry Chocolate">
+
+                            <div class="item-label">
+                                <h3>Raspberry Crunch</h3>
+                                    <p class="item-info">$16.00</p>
+                                    <p class="item-status">Only a few left!</p>
+                                    <p class="item-info">★★★★☆</p>
+                            </div>
+                      </div>
+                  </a>
+                </div>
+                
+                <div class="product-3col">
+                  <a href="#">
+                      <div class="product-item">
+                            <img src="img/rasp.jpeg" alt="Raspberry Chocolate">
+
+                            <div class="item-label">
+                                <h3>Raspberry Crunch</h3>
+                                    <p class="item-info">$16.00</p>
+                                    <p class="item-status">Only a few left!</p>
+                                    <p class="item-info">★★★★☆</p>
+                            </div>
+                      </div>
+                  </a>
+                </div>
+            </div>
+            <p>Note: This is the grid structure for the product display.</p>
+        </section>
+        
+        <section>
+            <h2>Website Colour Swatches</h2>
+            
+            <h3>Sample code:</h3>
+            <code>&lt;div class="colour-swatch" id="white"&gt;&lt;/div&gt;<br>
+            &lt;div class="colour-swatch" id="grey"&gt;&lt;/div&gt;<br>
+            &lt;div class="colour-swatch" id="light-gold"&gt;&lt;/div&gt;<br>
+            &lt;div class="colour-swatch" id="gold"&gt;&lt;/div&gt;<br>
+            &lt;div class="colour-swatch" id="red"&gt;&lt;/div&gt;<br>
+            &lt;div class="colour-swatch" id="black"&gt;&lt;/div&gt;</code>
+            
+            <h3>Rendered Element:</h3>
+            <div class="colour-swatch" id="white"></div>
+            <div class="colour-swatch" id="grey"></div>
+            <div class="colour-swatch" id="light-gold"></div>
+            <div class="colour-swatch" id="gold"></div>
+            <div class="colour-swatch" id="red"></div>
+            <div class="colour-swatch" id="black"></div>
+        </section>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+    
+    <div class="bottom-nav">
+        <nav class="nav-footer">
+            <a href="#">FAQ</a>
+            <a href="#">Shipping and Returns</a>
+            <a href="#">Track Your Order</a>
+            <a href="references.html">Citations</a>
+            <a href="styles.html">Style Guide</a>
+        </nav>
+    </div>
+
+  </body>
+</html>

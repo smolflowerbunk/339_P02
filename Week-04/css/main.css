@@ -1,0 +1,348 @@
+/*
+  DEFAULT STYLES
+*/
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+
+
+/* 
+    NAVIGATION ELEMENTS ---------------------
+*/
+.top-nav {
+    margin: 0em 2em 5em 0em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(221,218,213);
+}
+
+.button-nav {
+    /* letter spacing | https://www.w3schools.com/cssref/pr_text_letter-spacing.asp */
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 1em 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: rgb(0,0,0);
+    border: 1px solid rgb(255,255,255);
+    background-color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: border-color 0.3s ease-out;
+    transition: border-color 0.3s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus {
+    border: 1px solid rgb(0,0,0);
+}
+
+.nav-active {
+    color: rgb(173,133,13);
+}
+
+.bottom-nav {
+    /* full-width nav background | https://css-tricks.com/full-browser-width-bars */
+    margin: 18em -50em -50em -50em;
+    padding: 3em 50em 5em 50em;
+    background: rgb(241,234,208);
+}
+
+.bottom-nav a {
+    font-size: 0.875em;
+    margin: 0 1em 1em 1em;
+    text-decoration: none;
+    color: rgb(0,0,0);
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    -webkit-transition: border-color 0.2s ease-out;
+    transition: border-color 0.2s ease-out;
+}
+
+.bottom-nav a:hover, .bottom-nav a:focus {
+    border-bottom: 1px solid rgb(0,0,0);
+}
+
+
+
+/* 
+  LINKS, BUTTONS AND FORMS --------------------
+*/
+
+/* Styling for in-text links */
+.link-in-text {
+    color: rgb(173,133,13);
+    /* underline transition | https://markrabey.com/2015/05/17/css-transition-for-text-decoration/ */
+    text-decoration: none;
+    border-bottom: 1px solid rgba(173,133,13,0);
+    -webkit-transition: border-color 0.2s ease-out;
+    transition: border-color 0.2s ease-out;
+}
+
+.link-in-text:hover, .link-in-text:focus {
+    border-bottom: 1px solid rgb(173,133,13);
+}
+
+/* Styling for Submit/Reset button */
+.button-submit-reset {
+    letter-spacing: 0.05em;
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    text-transform: uppercase;
+    color: rgb(0,0,0);
+    text-decoration: none;
+    background-color: rgb(241,234,208);
+    /* offset border | https://webdevtrick.com/css-outline-styles/ */
+    outline: 1px solid rgba(0,0,0,0);
+    outline-offset: 5px;
+    -webkit-transition: outline 0.2s ease-out;
+    transition: outline 0.2s ease-out;
+}
+
+.checkout {
+    padding: 0.75em 3em;
+    float: right;
+}
+
+.button-submit-reset:hover, .button-submit-reset:focus {
+    outline: 1px solid rgb(0,0,0);
+    outline-offset: 5px;
+}
+
+/* Styling for text input field */
+form {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.input-field {
+    display: block;
+    padding: 0.5em 0.8em;
+    font-size: 0.875em;
+    width: 100%;
+    
+    letter-spacing: 0.02em;
+    border: 1px solid rgb(221,218,213);
+}
+
+.input-field:focus {
+    border: 1px solid rgb(0,0,0);
+}
+
+textarea {
+    width: 100%;
+}
+
+/* Styling for quantity drop-down */
+select {
+    margin-right: 2em;
+}
+
+#select-size {
+    padding: 0.75em 1.5em;
+}
+
+
+
+/* 
+  TEXT STYLING --------------------------
+*/
+
+h1, 
+h3 {
+    font-family: Gelasio, serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 400;
+    color: rgb(173,133,13);
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.logo {
+    font-size: 1.5em;
+    letter-spacing: 0em;
+    padding: 0.875em 1em;
+    outline: 1px solid rgb(0,0,0);
+}
+
+.product-name, .about-title, .contact-title {
+    color: rgb(173,133,13);
+    font-size: 1.5em;
+    text-align: left;
+}
+
+h1 a {
+    color: rgb(173,133,13);
+    text-decoration: none;
+}
+
+h2, .carousel-text {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.875em;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+p {
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+}
+
+.subhead-paragraph {
+    font-weight: 200;
+    text-align: center;
+    margin: auto;
+}
+
+ul, 
+ol {
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+    padding: 1rem;
+}
+
+/* div for product heading combination */
+.page-heading {
+    text-align: center;
+}
+
+
+
+/* 
+  BODY ELEMENTS ------------------------------
+*/
+
+/* Styling for grid */
+.product-grid a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+
+.product-item {
+    padding: 1em 2em;
+    margin: 1.5em;
+    border: 1px solid rgba(0,0,0,0);
+    -webkit-transition: outline 0.2s ease-out;
+    transition: outline 0.2s ease-out;
+}
+
+.product-item:hover, .product-item:focus {
+    border: 1px solid rgb(0,0,0);
+    outline-offset: 1px;
+}
+
+/* Styling for individual grid product cards */
+.product-item img {
+    /* centering images | https://www.w3schools.com/howto/howto_css_image_center.asp */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+}
+
+.item-label {
+    text-align: center;
+}
+
+.item-info, .item-status {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+}
+
+.sale {
+    color: rgb(202,24,24);
+}
+
+.item-status {
+    font-style: oblique;
+    color: rgb(202,24,24);
+}
+
+/* Styling for product page */
+
+.item-img {
+    height: auto;
+    max-width: 100%;
+    padding: 1.25em 1em;
+}
+
+.product-info {
+    padding: 1.25em 1em;
+}
+
+.reviews {
+    border-top: 1px solid rgb(221,218,213);
+}
+
+/* Styling for cart */
+#cart {
+    border-top:1px solid rgb(0,0,0);
+    border-bottom: 1px solid rgb(0,0,0);
+    margin: 0 0 3em 0;
+}
+
+/* Styling for home page */
+.slides {
+    display: block;
+    padding: 0;
+    position: relative;
+    text-align: left;
+}
+
+.carousel-img {
+    max-width: 100%;
+}
+
+.carousel-text, .carousel-link {
+    color: white;
+}
+
+.carousel-text { /* referenced from w3schools how to position text over an image */
+    font-size: 2.5em;
+
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, 50%);
+}
+
+.carousel-link {
+    font-size: 0.5em;
+    color: rgb(255,255,255);
+    /* underline transition | https://markrabey.com/2015/05/17/css-transition-for-text-decoration/ */
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0);
+    -webkit-transition: border-color 0.2s ease-out;
+    transition: border-color 0.2s ease-out;
+}
+
+.carousel-link:hover, .carousel-link:focus {
+    border-bottom: 1px solid rgb(255,255,255);
+}
+
+/* Styling for contact page */
+textarea {
+    max-width: 100%;
+}
+
