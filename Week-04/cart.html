@@ -28,14 +28,14 @@
         <h1>My Cart</h1>
         
         <section id="cart">
-            <div class="flexbox-3col">
+            <div class="flexbox-3col" id="cart-heading">
                 <!--each grid item is a different div-->
                 <div class="box-3col-heading">
-                    <h2>Product Image</h2>
+                    <h2>Product Name</h2>
                 </div>
                 
                 <div class="box-3col-heading">
-                    <h2>Product Name</h2>
+                    <h2>Price</h2>
                 </div>
                 
                 <div class="box-3col-heading">
@@ -44,23 +44,31 @@
             </div>
             
             <!--create a container to house the grid items-->
-            <div class="flexbox-3col">
+            <div class="flexbox-3col" id="cart">
                 <!--each grid item is a different div-->
                 <div class="box-3col-cart">
                      <img src="img/pfruit-square.jpg" alt="Passionfruit Chocolate">
+                    <h3>Passionfruit Swirl — Box of 6</h3>
                 </div>
                 
                 <div class="box-3col-cart">
-                    <h3>Passionfruit Swirl</h3>
+                    <h3>$16.00</h3>
                 </div>
                 
                 <div class="box-3col-cart">
                     <h3>3</h3>
                 </div>
             </div>
+            
+            <div class="flexbox-3col" id="right-col">
+                <div class="box-3col-cart">
+                    <h3 class="cart-total">Order Total: $48.00</h3>
+                </div>
+                <div class="box-3col-cart">
+                    <a class="button-submit-reset cart-total" href="buyer-info.html">Checkout</a>
+                </div>
+            </div>
         </section>
-        
-        <a class="button-submit-reset checkout" href="buyer-info.html">Checkout</a>
         
         
         
