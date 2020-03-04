@@ -395,7 +395,7 @@ div {
 }
 
 .accordion .handle label:before {
-    content: "&dtrif;"";
+    content: "▾";
     display: inline-block;
     margin-right: 10px;
     line-height: 1.556em;
