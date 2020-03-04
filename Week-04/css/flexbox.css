@@ -99,6 +99,20 @@ footer {
 	flex: 1 1 18rem;
 }
 
+/* CART PAGE */
+.cart-flexbox {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    justify-content: space-between;
+}
+
 
 /* ABOUT + CONTACT PAGES */
 .about-flexbox, .contact-flexbox {
@@ -117,7 +131,7 @@ footer {
 .contact-basic-info, .contact-other-info {
     padding: 0 10em;
     max-width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .about-img {

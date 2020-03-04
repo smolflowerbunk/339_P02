@@ -346,7 +346,7 @@ div {
     padding: 1em 1em;
 }
 
-.reviews {
+.divider {
     border-top: 1px solid rgb(221,218,213);
     padding: 1em 1em;
 }
@@ -400,15 +400,33 @@ div {
 
 
 /* STYLING FOR CART PAGE */
+
 #cart {
     border-top:1px solid rgb(0,0,0);
     border-bottom: 1px solid rgb(0,0,0);
     margin: 0 0 3em 0;
 }
 
+.cart-item img {
+    float: left;
+    display: inline-block;
+    padding-right: 1em;
+    margin: 1em;
+    height: auto;
+    width: 200px;
+}
+
+.cart-item h3 {
+    vertical-align: middle;
+}
+
 /* STYLING FOR CONTACT PAGE */
 textarea {
     max-width: 100%;
+}
+
+.contact-fields > a {
+    justify-content: flex-end;
 }
 
 
