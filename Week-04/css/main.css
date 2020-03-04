@@ -95,8 +95,8 @@ footer a:hover, footer a:focus {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     text-decoration: none;
-    display: inline-block;
-    padding: 0.75em 1.5em;
+    display: block;
+    padding: 0.75em 3em;
     color: rgb(0,0,0);
     background-color: rgb(241,234,208);
     /* offset border | https://webdevtrick.com/css-outline-styles/ */
@@ -105,10 +105,6 @@ footer a:hover, footer a:focus {
     outline-offset: 5px;
     -webkit-transition: outline 0.2s ease-out;
     transition: outline 0.2s ease-out;
-}
-
-.checkout {
-    padding: 0.75em 3em;
     float: right;
 }
 
@@ -298,9 +294,13 @@ section {
     margin-right: auto;
 }
 
-.box-2col-img, .box-2col-item>section{
+.box-2col-img {
     padding: 0;
-    margin-top: 0;
+}
+
+.box-2col-item>section{
+    padding: 0;
+    margin: 0 2em 1.5em 2em;
 }
 
 .box-2col-info {
@@ -312,7 +312,7 @@ section {
 }
 
 .box-1col-item {
-    margin-top: 3em;
+    margin: 0 2em 1.5em 2em;
 }
 
 /* Product Card Details */
@@ -332,13 +332,6 @@ section {
 .item-status {
     font-style: oblique;
     color: rgb(202,24,24);
-}
-
-/* Styling for cart */
-#cart {
-    border-top:1px solid rgb(0,0,0);
-    border-bottom: 1px solid rgb(0,0,0);
-    margin: 0 0 3em 0;
 }
 
 /* Styling for home page */
@@ -442,9 +435,17 @@ section {
 }
 
 /* STYLING FOR CART PAGE */
-
-#cart {
-    border-top:1px solid rgb(0,0,0);
+#cart>#cart{
     border-bottom: 1px solid rgb(0,0,0);
     margin: 0 0 3em 0;
+}
+
+#cart-heading {
+    border-bottom: 1px solid rgb(0,0,0);
+}
+
+.cart-total {
+    font-size: 1em;
+    float: right;
+    margin: 0 2em 2em 0;
 }
