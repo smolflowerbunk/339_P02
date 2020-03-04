@@ -283,6 +283,10 @@ section {
     margin-right: auto;
 }
 
+.box-2col-img, .box-2col-info {
+    padding: 0;
+}
+
 .item-label {
     text-align: center;
 }
@@ -417,7 +421,7 @@ section {
 /* referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */
 
 .reviews {
-    margin: 0 3em 0 3em;
+    padding: 0 3em 0 3em;
 }
 
 .reviews>section {
