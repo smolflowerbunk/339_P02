@@ -424,8 +424,8 @@ section {
     transition: 0.4s;
 }
 
-.product-info .accordion>input[name="collapse"]:checked ~ .accordion-content {
-  height: 50px;
+.accordion>input[name="collapse"]:checked ~ .accordion-content {
+  height: inherit;
   transition: height 0.5s;
 }
 
