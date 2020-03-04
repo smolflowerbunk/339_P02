@@ -294,7 +294,11 @@ section {
     margin-right: auto;
 }
 
-.box-2col-img, .box-2col-item>section{
+.box-2col-img {
+    padding: 0;
+}
+
+.box-2col-item>section{
     padding: 0;
     margin: 0 2em 1.5em 2em;
 }
