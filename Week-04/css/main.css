@@ -292,29 +292,11 @@ div {
     color: rgb(202,24,24);
 }
 
-/* Styling for product page */
-.item-img {
-    height: auto;
-    max-width: 100%;
-    padding: 1.25em 1em;
-}
+/* 
+    PAGE STYLINGS ------------------------------
+*/
 
-.product-info {
-    padding: 1.25em 1em;
-}
-
-.reviews {
-    border-top: 1px solid rgb(221,218,213);
-}
-
-/* Styling for cart */
-#cart {
-    border-top:1px solid rgb(0,0,0);
-    border-bottom: 1px solid rgb(0,0,0);
-    margin: 0 0 3em 0;
-}
-
-/* Styling for home page */
+/* STYLING FOR HOME PAGE */
 .slides {
     display: block;
     padding: 0;
@@ -367,7 +349,6 @@ div {
 .reviews {
     border-top: 1px solid rgb(221,218,213);
 }
-
 
 
 .accordion>input[name="collapse"] {

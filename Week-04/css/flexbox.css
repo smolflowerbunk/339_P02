@@ -85,11 +85,14 @@ footer {
     flex-wrap: wrap;
     
     width: 100%;
-    margin: 1em;
+    justify-content: space-around;
 }
 
 .product-img {
-	flex: 1 1 400px;
+	height: auto;
+    max-width: 100%;
+    text-align: center;
+
 }
 
 .product-info {
@@ -108,12 +111,13 @@ footer {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
+    justify-content: space-around;
 }
 
 .contact-basic-info, .contact-other-info {
     padding: 0 10em;
     max-width: 100%;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .about-img {
