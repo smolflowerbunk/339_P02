@@ -128,6 +128,16 @@ footer {
     flex: 1 1 100%;
 }
 
+
+/* CONTACT PAGE */
+.box-2col-item {
+    flex: 1 1 50%;
+}
+
+.box-2col-item button {
+    float: right;
+}
+
 /* CART PAGE */
 #cart>.flexbox-3col {
     align-items: center;
@@ -218,29 +228,6 @@ footer {
 
 /* MEDIA QUERIES */
 @media (max-width: 70em) {
-    .about-flexbox {
-        flex-direction: column;
-    }
-
-    .about-info {
-        padding: 0 1em;
-        max-width: 100%;
-    }
-    
-    .contact-flexbox {
-        flex-direction: column;
-    }
-
-    .contact-info {
-        padding: 0 2em;
-        max-width: 100%;
-    }
-
-    .contact-form {
-        padding: 0 2em;
-        max-width: 100%;
-    }
-    
     .flexbox-3col {
         -webkit-justify-content: space-around;
         -ms-justify-content: space-around;
@@ -255,10 +242,12 @@ footer {
 @media (max-width: 55em) {
     .flexbox-2col {
 		flex-direction: column;
+        align-items: center;
 	}
     
-    .box-2col-img {
-        justify-content: center;
+    .box-2col-info {
+        width: 100%;
+        padding: 0 1em 2em 1em;
     }
 }
 
@@ -306,5 +295,13 @@ footer {
     .box-3col-item {
         flex: 1 1 100%;
         flex-direction: column;
+    }
+    
+    .box-quantity-item {
+        flex: 1 1 100%;
+    }
+    
+    .box-quantity-item:last-of-type {
+        margin-top: 0.5em;
     }
 }
