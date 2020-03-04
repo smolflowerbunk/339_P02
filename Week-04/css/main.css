@@ -184,7 +184,7 @@ textarea:focus {
 */
 
 h1, 
-h3 {
+h3, .reviews label {
     font-family: Gelasio, serif;
     text-transform: uppercase;
 }
@@ -222,7 +222,7 @@ h2, .carousel-text {
     font-weight: 500;
 }
 
-h3 {
+h3, .reviews label {
     font-size: 0.75em;
     font-weight: 600;
     letter-spacing: 0.08em;
