@@ -455,3 +455,9 @@ section {
     float: right;
     margin: 0 2em 2em 0;
 }
+
+/* STYLING FOR ORDER TRACKER */
+.tracking footer {
+    position: absolute;
+}
+
