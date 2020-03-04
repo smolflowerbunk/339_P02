@@ -414,17 +414,7 @@ section {
 }
 
 .accordion>input[name="collapse"]:checked ~ .accordion-content {
-  height: 3em;
-  transition: height 0.5s;
-}
-
-.accordion>input[name="collapse"]:checked ~ .accordion-content#medium-length {
-  height: 8em;
-  transition: height 0.5s;
-}
-
-.accordion>input[name="collapse"]:checked ~ .accordion-content#long-length {
-  height: 17em;
+  height: inherit;
   transition: height 0.5s;
 }
 
