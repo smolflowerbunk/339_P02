@@ -31,13 +31,13 @@
             </nav>
         </div>
         
-        <div class="product-flexbox">
-            <div class="product-img">
+        <div class="flexbox-2col">
+            <div class="box-2col-img">
                 <img class="item-img" src="img/oliveoil.jpg" alt="Passionfruit Chocolate">
             </div>
 
             <!-- product information -->
-            <div class="product-info">
+            <div class="box-2col-info">
                 <h1 class="product-name">Olive Oil Infusion</h1>
                 <h2 class="sale">$8.00</h2>
                 <h2>★★★★☆</h2>
@@ -46,13 +46,15 @@
 
                 <p><em>May contain traces of tree nuts, peanuts, and wheat.</em></p>
 
-                <div class="quantity">
+                <section>
                     <h3>Choose your Size</h3>
-                    <button class="button-submit-reset" id="size">Box of 6</button>
-                    <button class="button-submit-reset" id="size">Box of 12</button>
-                    <button class="button-submit-reset" id="size">Box of 24</button>
-                    <button class="button-submit-reset">Add to Cart</button>
-                </div>
+                    <div class="flexbox-quantity">
+                        <button class="button-submit-reset box-quantity-item" id="size">Box of 6</button>
+                        <button class="button-submit-reset box-quantity-item" id="size">Box of 12</button>
+                        <button class="button-submit-reset box-quantity-item" id="size">Box of 24</button>
+                        <button class="button-submit-reset box-quantity-item">Add to Cart</button>
+                    </div>
+                </section>
                 <!-- collapsible menus | referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ --> 
                 <section class="accordion">
                     <input type="checkbox" name="collapse" id="handle1">
@@ -83,8 +85,6 @@
         <!-- REVIEW SECTION -->
         <div>
             <h2>Customer Reviews</h2>
-
-            <br>
             <section class="reviews">
                 <h3>Alissa R.</h3>
                 <p>★★★★☆</p>
