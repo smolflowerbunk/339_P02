@@ -240,6 +240,19 @@ footer {
         display: block;
         width: auto;
     }
+
+    .carousel-text {
+        position: static;
+        color: rgb(0,0,0);
+    }
+
+    .carousel-link {
+        color: rgb(0,0,0);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0);
+        -webkit-transition: border-color 0.2s ease-out;
+        transition: border-color 0.2s ease-out;
+    }
 }
 
 @media (max-width: 40em) {    
