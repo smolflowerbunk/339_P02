@@ -14,7 +14,7 @@ body {
 
 footer {
     flex-shrink: 0;
-    margin-top: auto;
+    margin-top: 5em
 }
 
 /* MAIN NAVIGATION BAR */
@@ -207,6 +207,10 @@ footer {
     .box-2col-info {
         width: 100%;
         padding: 0 1em 2em 1em;
+    }
+    
+    .box-2col-item {
+        width: 100%;
     }
 }
 

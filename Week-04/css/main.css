@@ -51,7 +51,6 @@ footer {
     padding: 3em 1em 3.5em 1em;
     background: rgb(241,234,208);
     width: 100%;
-    margin-top: 2em;
 }
 
 footer a {
@@ -318,6 +317,10 @@ section {
     margin: 0 2em 1.5em 2em;
 }
 
+.box-1col-item>.accordion:last-of-type {
+    margin-bottom: 3em;
+}
+
 /* Product Card Details */
 .item-label {
     text-align: center;
@@ -425,7 +428,7 @@ section {
 }
 
 .accordion>input[name="collapse"]:checked ~ .accordion-content {
-  height: inherit;
+  height: auto;
   transition: height 0.5s;
 }
 
