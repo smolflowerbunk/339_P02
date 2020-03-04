@@ -10,7 +10,7 @@ body {
 
 
 /* 
-    NAVIGATION ELEMENTS --------------------------------------------------------
+    NAVIGATION ELEMENTS ---------------------------------------
 */
 
 /* Main Navigation */
@@ -416,6 +416,13 @@ section {
 
 /* referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */
 
+.reviews {
+    margin: 0 3em 0 3em;
+}
+
+.reviews>section {
+    border-top: 1px solid rgb(0,0,0);
+}
 
 /* STYLING FOR CART PAGE */
 #cart {
