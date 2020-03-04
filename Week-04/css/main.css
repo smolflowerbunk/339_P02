@@ -197,7 +197,7 @@ h2, .carousel-text {
     font-weight: 500;
 }
 
-h3 {
+h3, .handle {
     font-size: 0.75em;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -253,7 +253,7 @@ ol {
     outline-offset: 1px;
 }
 
-/* Styling for individual grid product cards */
+/* STYLING FOR INDIVIDUAL GRID PRODUCT CARDS */
 .product-item img {
     /* centering images | https://www.w3schools.com/howto/howto_css_image_center.asp */
     display: block;
@@ -280,30 +280,10 @@ ol {
     color: rgb(202,24,24);
 }
 
-/* Styling for product page */
+/* PAGE SPECIFIC STYLINGS ------------------------------
+*/
 
-.item-img {
-    height: auto;
-    max-width: 100%;
-    padding: 1.25em 1em;
-}
-
-.product-info {
-    padding: 1.25em 1em;
-}
-
-.reviews {
-    border-top: 1px solid rgb(221,218,213);
-}
-
-/* Styling for cart */
-#cart {
-    border-top:1px solid rgb(0,0,0);
-    border-bottom: 1px solid rgb(0,0,0);
-    margin: 0 0 3em 0;
-}
-
-/* Styling for home page */
+/* STYLING FOR HOME PAGE */
 .slides {
     display: block;
     padding: 0;
@@ -342,8 +322,80 @@ ol {
     border-bottom: 1px solid rgb(255,255,255);
 }
 
-/* Styling for contact page */
+/* STYLING FOR PRODUCT PAGE */
+.item-img {
+    height: auto;
+    max-width: 100%;
+    padding: 1.25em 1em;
+}
+
+.product-info {
+    padding: 1em 1em;
+}
+
+.reviews {
+    border-top: 1px solid rgb(221,218,213);
+}
+
+
+
+.accordion>input[name="collapse"] {
+    display: none;
+}
+
+.accordion .accordion-content {
+    background-color: #fff;
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+}
+
+.accordion label {
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+.accordion-content {
+    border-top: 1px solid rgba(0,0,0);
+}
+
+.accordion label:hover, .accordion label:focus {
+    color: rgb(173,133,13);
+}
+
+.accordion .handle label:before {
+    content: &dtrif;;
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 1.556em;
+    vertical-align: middle;
+    transition: 0.4s;
+}
+
+.accordion>input[name="collapse"]:checked ~ .handle label:before {
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: 0.4s;
+}
+
+.accordion > input[name="collapse"]:checked ~ .accordion-content {
+  height: 3em;
+  transition: height 0.5s;
+}
+
+/* referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */
+
+
+/* STYLING FOR CART PAGE */
+#cart {
+    border-top:1px solid rgb(0,0,0);
+    border-bottom: 1px solid rgb(0,0,0);
+    margin: 0 0 3em 0;
+}
+
+/* STYLING FOR CONTACT PAGE */
 textarea {
     max-width: 100%;
 }
+
 

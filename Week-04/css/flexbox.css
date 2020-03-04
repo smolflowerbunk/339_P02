@@ -113,7 +113,7 @@ footer {
 .contact-basic-info, .contact-other-info {
     padding: 0 10em;
     max-width: 100%;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .about-img {

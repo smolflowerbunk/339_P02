@@ -47,6 +47,8 @@
 
                 <p><em>May contain traces of tree nuts, peanuts, and wheat.</em></p>
 
+                <br>
+
                 <div class="quantity">
                     <select id="select-size">
                         <option value="0">SELECT SIZE</option>
@@ -60,12 +62,31 @@
                 </div>
 
                 <br>
-                <!-- ingredient info -->
-                <h3>Flavour Notes</h3>
-                    <p>Tangy passionfruit jelly swirled into creamy white chocolate.</p>
 
-                <h3>Ingredient List</h3>
-                <p>Passionfruit juice, glucose-fructose, sugar, citric acid, dark chocolate, cocoa butter, soy lecithin, vanilla.</p>
+                <!-- referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ --> 
+                <section class="accordion">
+                    <input type="checkbox" name="collapse" id="handle1" checked="checked">
+                    <h3 class="handle">
+                        <label for="handle1">Flavour Notes</label>
+                    </h3>
+                    
+                    <div class="accordion-content">
+                        <p>Tangy passionfruit jelly swirled into creamy white chocolate.</p>  
+                    </div>
+
+                    <input type="checkbox" name="collapse" id="handle2">
+                    <h3 class="handle">
+                      <label for="handle2">Ingredient List</label>
+                    </h3>
+
+                    <div class="accordion-content">
+                        <p>Passionfruit juice, glucose-fructose, sugar, citric acid, dark chocolate, cocoa butter, soy lecithin, vanilla.</p>  
+                    </div>
+                </section>
+
+
+                <!-- <h3>Ingredient List</h3>
+                <p>Passionfruit juice, glucose-fructose, sugar, citric acid, dark chocolate, cocoa butter, soy lecithin, vanilla.</p> -->
             </div>
         </div>
 
@@ -94,5 +115,8 @@
                 <a href="styles.html">Style Guide</a>
             </nav>
         </footer>
+
+        <!---- JAVASCRIPT ----->
+        <script src="js/dropdown.js"></script>
     </body>
 </html>
