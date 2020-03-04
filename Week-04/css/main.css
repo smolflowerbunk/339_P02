@@ -287,6 +287,10 @@ section {
     padding: 0;
 }
 
+.box-1col-item {
+    margin-top: 3em;
+}
+
 .item-label {
     text-align: center;
 }
@@ -414,8 +418,14 @@ section {
   transition: height 0.5s;
 }
 
-.accordion:last-of-type {
-    margin-top: 1.5em;
+.accordion>input[name="collapse"]:checked ~ .accordion-content#medium-length {
+  height: 8em;
+  transition: height 0.5s;
+}
+
+.accordion>input[name="collapse"]:checked ~ .accordion-content#long-length {
+  height: 17em;
+  transition: height 0.5s;
 }
 
 /* referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */

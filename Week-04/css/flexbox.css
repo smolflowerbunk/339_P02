@@ -129,17 +129,29 @@ footer {
 }
 
 /* CART PAGE */
-.cart-flexbox {
-    display: -webkit-inline-flex;
-    display: -ms-inline-flex;
-    display: inline-flex;
-    
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    
+#cart>.flexbox-3col {
+    align-items: center;
     width: 100%;
+}
+
+.box-3col-cart, .box-3col-heading {
+    padding: 2em;
+    text-align: center;
+    flex: 1 1 30%;
+    
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
     justify-content: space-between;
+}
+
+.box-3col-cart img {
+    width: 80%;
+}
+
+
+/* FAQ & SHIPPING */
+.flexbox-1col {
+    padding: 0 10%;
 }
 
 
