@@ -23,79 +23,81 @@
     </head>
 
     <body>
-        <!-- NAVIGATION HERE -->
-        <div class="top-nav">
-            <h1 class="logo"><a href="home.html">petit amours</a></h1>
-            <nav class="nav-main">
-                <a class="button-nav" href="shop.html">Shop</a>
-                <a class="button-nav" href="about.html">About</a>
-                <a class="button-nav" href="contact.html">Contact</a>
-                <a class="button-nav" href="cart.html">Cart</a>
-            </nav>
-        </div>
-
-        <!-- carousel -->
-        <div class="carousel-container">
-            <div class="slides fade">
-                <!-- <div class="number-text"> 1 / 2 </div> -->
-                <img class="carousel-img" src="img/carousel-1.jpg" alt="Buy 2, get 1 free chocolate promotion.">
-                <div class="carousel-text">Post-Valentine's Day Clearance<br><a href="shop.html" class="carousel-link">Shop the sale &#8594;</a></div> 
+        <div class="content">
+            <!-- NAVIGATION HERE -->
+            <div class="top-nav">
+                <h1 class="logo"><a href="home.html">petit amours</a></h1>
+                <nav class="nav-main">
+                    <a class="button-nav" href="shop.html">Shop</a>
+                    <a class="button-nav" href="about.html">About</a>
+                    <a class="button-nav" href="contact.html">Contact</a>
+                    <a class="button-nav" href="cart.html">Cart</a>
+                </nav>
             </div>
+
+            <!-- carousel -->
+            <div class="carousel-container">
+                <div class="slides fade">
+                    <!-- <div class="number-text"> 1 / 2 </div> -->
+                    <img class="carousel-img" src="img/carousel-1.jpg" alt="Buy 2, get 1 free chocolate promotion.">
+                    <div class="carousel-text">Post-Valentine's Day Clearance<br><a href="shop.html" class="carousel-link">Shop the sale &#8594;</a></div> 
+                </div>
+
+                <!-- have not figured out yet
+                <div class="slides fade">
+                    <div class="number-text"> 2 / 2 </div>
+                    <img class="carousel-img" src="img/carousel-2.gif" alt="A set of chocolate">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+            -->
+            </div>
+
+            <br>
 
             <!-- have not figured out yet
-            <div class="slides fade">
-                <div class="number-text"> 2 / 2 </div>
-                <img class="carousel-img" src="img/carousel-2.gif" alt="A set of chocolate">
+            <div class="dot"> 
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
             </div>
+            -->
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a> 
-        -->
-        </div>
+            <!-- carousel html referenced from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 
-        <br>
+            <!---- FEATURED PRODUCTS ----->
+            <h1>Featured Products</h1>
+            <div class="flexbox-3col" id="box-2item">
+                <!--- turn div into link | https://css-tricks.com/snippets/jquery/make-entire-div-clickable/ -->
+                <div class="box-3col-item">
+                    <a href="product.html">
+                        <div class="box-3col-item-info">
+                            <img src="img/pfruit-square.jpg" alt="Passionfruit Chocolate">
 
-        <!-- have not figured out yet
-        <div class="dot"> 
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-        </div>
-        -->
-
-        <!-- carousel html referenced from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-
-        <!---- FEATURED PRODUCTS ----->
-        <h1>Featured Products</h1>
-        <div class="flexbox-3col" id="box-2item">
-            <!--- turn div into link | https://css-tricks.com/snippets/jquery/make-entire-div-clickable/ -->
-            <div class="box-3col-item">
-                <a href="product.html">
-                    <div class="box-3col-item-info">
-                        <img src="img/pfruit-square.jpg" alt="Passionfruit Chocolate">
-
-                        <div class="item-label">
-                            <h3>Passionfruit Swirl</h3>
-                                <p class="item-info">$16.00</p>
-                                <p class="item-status">Only a few left!</p>
-                                <p class="item-info">★★★★☆</p>
+                            <div class="item-label">
+                                <h3>Passionfruit Swirl</h3>
+                                    <p class="item-info">$16.00</p>
+                                    <p class="item-status">Only a few left!</p>
+                                    <p class="item-info">★★★★☆</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="box-3col-item">
-                <a href="product.html">
-                    <div class="box-3col-item-info">
-                        <img src="img/oliveoil-square.jpg" alt="Olive Oil Chocolate">
+                    </a>
+                </div>
 
-                        <div class="item-label">
-                            <h3>Olive Oil Infusion</h3>
-                                <p class="item-info sale">$8.00</p>
-                                <p class="item-status">Seasonal Clearance</p>
-                                <p class="item-info">★★★★☆</p>
+                <div class="box-3col-item">
+                    <a href="product.html">
+                        <div class="box-3col-item-info">
+                            <img src="img/oliveoil-square.jpg" alt="Olive Oil Chocolate">
+
+                            <div class="item-label">
+                                <h3>Olive Oil Infusion</h3>
+                                    <p class="item-info sale">$8.00</p>
+                                    <p class="item-status">Seasonal Clearance</p>
+                                    <p class="item-info">★★★★☆</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
 

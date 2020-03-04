@@ -20,81 +20,83 @@
     </head>
 
     <body>
-        <!-- NAVIGATION HERE -->
-        <div class="top-nav">
-            <h1 class="logo"><a href="home.html">petit amours</a></h1>
-            <nav class="nav-main">
-                <a class="button-nav nav-active" href="shop.html">Shop</a>
-                <a class="button-nav" href="about.html">About</a>
-                <a class="button-nav" href="contact.html">Contact</a>
-                <a class="button-nav" href="cart.html">Cart</a>
-            </nav>
-        </div>
-        
-        <div class="flexbox-2col">
-            <div class="box-2col-img">
-                <img class="item-img" src="img/oliveoil.jpg" alt="Olive Oil Chocolate">
+        <div class="content">
+            <!-- NAVIGATION HERE -->
+            <div class="top-nav">
+                <h1 class="logo"><a href="home.html">petit amours</a></h1>
+                <nav class="nav-main">
+                    <a class="button-nav nav-active" href="shop.html">Shop</a>
+                    <a class="button-nav" href="about.html">About</a>
+                    <a class="button-nav" href="contact.html">Contact</a>
+                    <a class="button-nav" href="cart.html">Cart</a>
+                </nav>
             </div>
 
-            <!-- product information -->
-            <div class="box-2col-info">
-                <h1 class="heading-left">Olive Oil Infusion</h1>
-                <h2 class="sale">$8.00</h2>
-                <h2>★★★★☆</h2>
+            <div class="flexbox-2col">
+                <div class="box-2col-img">
+                    <img class="item-img" src="img/oliveoil.jpg" alt="Olive Oil Chocolate">
+                </div>
 
-                <p>An eccentric and sophisticated mix of 70% dark chocolate with blood orange olive oil.</p>
+                <!-- product information -->
+                <div class="box-2col-info">
+                    <h1 class="heading-left">Olive Oil Infusion</h1>
+                    <h2 class="sale">$8.00</h2>
+                    <h2>★★★★☆</h2>
 
-                <p><em>May contain traces of tree nuts, peanuts, and wheat.</em></p>
+                    <p>An eccentric and sophisticated mix of 70% dark chocolate with blood orange olive oil.</p>
 
+                    <p><em>May contain traces of tree nuts, peanuts, and wheat.</em></p>
+
+                    <section>
+                        <h3>Choose your Size</h3>
+                        <div class="flexbox-quantity">
+                            <button class="button-submit-reset box-quantity-item" id="size">Box of 6</button>
+                            <button class="button-submit-reset box-quantity-item" id="size">Box of 12</button>
+                            <button class="button-submit-reset box-quantity-item" id="size">Box of 24</button>
+                            <button class="button-submit-reset box-quantity-item">Add to Cart</button>
+                        </div>
+                    </section>
+                    <!-- collapsible menus | referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ --> 
+                    <section class="accordion">
+                        <input type="checkbox" name="collapse" id="handle1">
+
+                        <h3 class="handle">
+                            <label for="handle1">Flavour Notes</label>
+                        </h3>
+
+                        <div class="accordion-content">
+                            <p>Smooth, creamy, dark chocolate with an undertone of blood orange.</p>  
+                        </div>
+                    </section>
+
+                    <section class="accordion">
+                        <input type="checkbox" name="collapse" id="handle2">
+
+                        <h3 class="handle">
+                          <label for="handle2">Ingredient List</label>
+                        </h3>
+
+                        <div class="accordion-content">
+                            <p>Glucose-fructose, sugar, dark chocolate, cocoa butter, soy lecithin, blood orange flavoured olive oil, vanilla.</p>  
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- REVIEW SECTION -->
+            <div class="reviews">
+                <h2>Customer Reviews</h2>
                 <section>
-                    <h3>Choose your Size</h3>
-                    <div class="flexbox-quantity">
-                        <button class="button-submit-reset box-quantity-item" id="size">Box of 6</button>
-                        <button class="button-submit-reset box-quantity-item" id="size">Box of 12</button>
-                        <button class="button-submit-reset box-quantity-item" id="size">Box of 24</button>
-                        <button class="button-submit-reset box-quantity-item">Add to Cart</button>
-                    </div>
+                    <h3>Alissa R.</h3>
+                    <p>★★★★☆</p>
+                    <p>If you like weird food pairings, I would definitely recommend this. Did not disappoint. </p>
                 </section>
-                <!-- collapsible menus | referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ --> 
-                <section class="accordion">
-                    <input type="checkbox" name="collapse" id="handle1">
-                    
-                    <h3 class="handle">
-                        <label for="handle1">Flavour Notes</label>
-                    </h3>
-                    
-                    <div class="accordion-content">
-                        <p>Smooth, creamy, dark chocolate with an undertone of blood orange.</p>  
-                    </div>
-                </section>
-                
-                <section class="accordion">
-                    <input type="checkbox" name="collapse" id="handle2">
-                    
-                    <h3 class="handle">
-                      <label for="handle2">Ingredient List</label>
-                    </h3>
-
-                    <div class="accordion-content">
-                        <p>Glucose-fructose, sugar, dark chocolate, cocoa butter, soy lecithin, blood orange flavoured olive oil, vanilla.</p>  
-                    </div>
+                <section>
+                    <h3>Karen S.</h3>
+                    <p>★★★★☆</p>
+                    <p>Wow! Never thought I would have liked this combination of flavours but now I can't get enough.</p>
                 </section>
             </div>
-        </div>
-
-        <!-- REVIEW SECTION -->
-        <div class="reviews">
-            <h2>Customer Reviews</h2>
-            <section>
-                <h3>Alissa R.</h3>
-                <p>★★★★☆</p>
-                <p>If you like weird food pairings, I would definitely recommend this. Did not disappoint. </p>
-            </section>
-            <section>
-                <h3>Karen S.</h3>
-                <p>★★★★☆</p>
-                <p>Wow! Never thought I would have liked this combination of flavours but now I can't get enough.</p>
-            </section>
         </div>
         
         <!---- FOOTER NAV----->

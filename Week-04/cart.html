@@ -15,60 +15,62 @@
     </head>
     
     <body>
-        <div class="top-nav">
-            <h1 class="logo"><a href="home.html">petit amours</a></h1>
-            <nav class="nav-main">
-                <a class="button-nav" href="shop.html">Shop</a>
-                <a class="button-nav" href="about.html">About</a>
-                <a class="button-nav" href="contact.html">Contact</a>
-                <a class="button-nav nav-active" href="cart.html">Cart</a>
-            </nav>
+        <div class="content">
+            <div class="top-nav">
+                <h1 class="logo"><a href="home.html">petit amours</a></h1>
+                <nav class="nav-main">
+                    <a class="button-nav" href="shop.html">Shop</a>
+                    <a class="button-nav" href="about.html">About</a>
+                    <a class="button-nav" href="contact.html">Contact</a>
+                    <a class="button-nav nav-active" href="cart.html">Cart</a>
+                </nav>
+            </div>
+
+            <h1>My Cart</h1>
+
+            <section id="cart">
+                <div class="flexbox-3col" id="cart-heading">
+                    <!--each grid item is a different div-->
+                    <div class="box-3col-heading">
+                        <h2>Product Name</h2>
+                    </div>
+
+                    <div class="box-3col-heading">
+                        <h2>Price</h2>
+                    </div>
+
+                    <div class="box-3col-heading">
+                        <h2>Quantity</h2>
+                    </div>
+                </div>
+
+                <!--create a container to house the grid items-->
+                <div class="flexbox-3col" id="cart">
+                    <!--each grid item is a different div-->
+                    <div class="box-3col-cart">
+                         <img src="img/pfruit-square.jpg" alt="Passionfruit Chocolate">
+                        <h3>Passionfruit Swirl — Box of 6</h3>
+                    </div>
+
+                    <div class="box-3col-cart">
+                        <h3>$16.00</h3>
+                    </div>
+
+                    <div class="box-3col-cart">
+                        <h3>3</h3>
+                    </div>
+                </div>
+
+                <div class="flexbox-3col" id="right-col">
+                    <div class="box-3col-cart">
+                        <h3 class="cart-total">Order Total: $48.00</h3>
+                    </div>
+                    <div class="box-3col-cart">
+                        <a class="button-submit-reset cart-total" href="buyer-info.html">Checkout</a>
+                    </div>
+                </div>
+            </section>
         </div>
-        
-        <h1>My Cart</h1>
-        
-        <section id="cart">
-            <div class="flexbox-3col" id="cart-heading">
-                <!--each grid item is a different div-->
-                <div class="box-3col-heading">
-                    <h2>Product Name</h2>
-                </div>
-                
-                <div class="box-3col-heading">
-                    <h2>Price</h2>
-                </div>
-                
-                <div class="box-3col-heading">
-                    <h2>Quantity</h2>
-                </div>
-            </div>
-            
-            <!--create a container to house the grid items-->
-            <div class="flexbox-3col" id="cart">
-                <!--each grid item is a different div-->
-                <div class="box-3col-cart">
-                     <img src="img/pfruit-square.jpg" alt="Passionfruit Chocolate">
-                    <h3>Passionfruit Swirl — Box of 6</h3>
-                </div>
-                
-                <div class="box-3col-cart">
-                    <h3>$16.00</h3>
-                </div>
-                
-                <div class="box-3col-cart">
-                    <h3>3</h3>
-                </div>
-            </div>
-            
-            <div class="flexbox-3col" id="right-col">
-                <div class="box-3col-cart">
-                    <h3 class="cart-total">Order Total: $48.00</h3>
-                </div>
-                <div class="box-3col-cart">
-                    <a class="button-submit-reset cart-total" href="buyer-info.html">Checkout</a>
-                </div>
-            </div>
-        </section>
         
         
         
