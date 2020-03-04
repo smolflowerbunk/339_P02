@@ -48,9 +48,9 @@ body {
 /* Footer Links */
 footer {
     /* positioning the footer at the bottom of the page | https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ ------ IN PROGRESS ----- */
-    padding: 3em 2em 5em 2em;
+    padding: 3em 1em 3.5em 1em;
     background: rgb(241,234,208);
-    position: absolute;
+    margin-top: 3em;
     bottom: 0;
     width: 100%;
 }
@@ -348,6 +348,7 @@ div {
 
 .reviews {
     border-top: 1px solid rgb(221,218,213);
+    padding: 1em 1em;
 }
 
 
