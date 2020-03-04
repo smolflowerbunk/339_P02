@@ -31,13 +31,14 @@
             </nav>
         </div>
         
-        <div class="product-flexbox">
-            <div class="product-img">
+        <div class="flexbox-2col">
+            <!-- product images -->
+            <section class="box-2col-img">
                 <img class="item-img" src="img/pfruit.jpg" alt="Passionfruit Chocolate">
-            </div>
+            </section>
 
             <!-- product information -->
-            <div class="product-info">
+            <section class="box-2col-info">
                 <h1 class="product-name">Passionfruit Swirl</h1>
                 <h2>$16.00</h2>
                 <h2>★★★★☆</h2>
@@ -46,13 +47,15 @@
 
                 <p><em>May contain traces of tree nuts, peanuts, and wheat.</em></p>
 
-                <div class="quantity">
+                <section>
                     <h3>Choose your Size</h3>
-                    <button class="button-submit-reset" id="size">Box of 6</button>
-                    <button class="button-submit-reset" id="size">Box of 12</button>
-                    <button class="button-submit-reset" id="size">Box of 24</button>
-                    <button class="button-submit-reset">Add to Cart</button>
-                </div>
+                    <div class="flexbox-quantity">
+                        <button class="button-submit-reset box-quantity-item" id="size">Box of 6</button>
+                        <button class="button-submit-reset box-quantity-item" id="size">Box of 12</button>
+                        <button class="button-submit-reset box-quantity-item" id="size">Box of 24</button>
+                        <button class="button-submit-reset box-quantity-item">Add to Cart</button>
+                    </div>
+                </section>
                 <!-- collapsible menus | referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ --> 
                 <section class="accordion">
                     <input type="checkbox" name="collapse" id="handle1">
@@ -77,27 +80,25 @@
                         <p>Passionfruit juice, glucose-fructose, sugar, citric acid, white chocolate, cocoa butter, soy lecithin, vanilla.</p>  
                     </div>
                 </section>
-            </div>
+            </section>
         </div>
-
+    
         <!-- REVIEW SECTION -->
-        <div>
+        <div class="reviews">
             <h2>Customer Reviews</h2>
-
-            <br>
-            <section class="reviews">
+            <section>
                 <h3>John T.</h3>
                 <p>★★★★☆</p>
                 <p>I much prefer the Citrus Burst, but they’re pretty freakin’ good. Bought these for my sister because they’re her favourite. </p>
             </section>
-            <section class="reviews">
+            <section>
                 <h3>April M.</h3>
                 <p>★★★★☆</p>
                 <p>So yummy! I bought a box of 12 as a gift for my mother’s birthday and we thoroughly enjoyed them!</p>
             </section>
         </div>
         
-        <!---- FOOTER NAV----->
+        <!-- FOOTER NAV--->
         <footer>
             <nav class="nav-footer">
                 <a href="faq.html">FAQ</a>

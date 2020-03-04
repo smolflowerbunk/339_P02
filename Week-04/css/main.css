@@ -4,19 +4,18 @@
 body {
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
-    overflow-x: hidden;
     position: relative;
 }
 
 
 
 /* 
-    NAVIGATION ELEMENTS --------------------------------------------------------
+    NAVIGATION ELEMENTS ---------------------------------------
 */
 
 /* Main Navigation */
 .top-nav {
-    margin: 0em 0em 5em 0em;
+    margin: 0em 0em 2em 0em;
     padding: 2em 2em 1em 2em;
     border-bottom: 1px solid rgb(221,218,213);
 }
@@ -41,13 +40,17 @@ body {
     border: 1px solid rgb(0,0,0);
 }
 
+.button-nav:active {
+    background-color: rgb(241,234,208);
+}
+
 .nav-active {
     color: rgb(173,133,13);
 }
 
 /* Footer Links */
 footer {
-    /* positioning the footer at the bottom of the page | https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ ------ IN PROGRESS ----- */
+    /* positioning the footer at the bottom of the page | https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/*/
     padding: 3em 1em 3.5em 1em;
     background: rgb(241,234,208);
     margin-top: 3em;
@@ -119,15 +122,14 @@ footer a:hover, footer a:focus {
 
 /* Styling for Size Selection button */
 #size {
-    margin: 0 1em 1em 0;
+    margin: 0 0 1em 0;
     background-color: rgb(255,255,255);
     outline: 1px solid rgb(221,218,213);
     outline-offset: -1px;
 }
 
 #size:hover {
-    color: rgb(173,133,13);
-    outline: 1px solid rgb(241,234,208);
+    outline: 1px solid rgb(0,0,0);
     outline-offset: -1px;
 }
 
@@ -246,32 +248,43 @@ div {
     padding: 0 2em 0 2em;
 }
 
+section {
+    margin-top: 2.5em;
+}
+
 /* Styling for grid */
-.product-grid a {
+.box-3col-item a {
     text-decoration: none;
     color: rgb(0,0,0);
 }
 
-.product-item {
-    padding: 1em 2em;
-    margin: 1.5em;
+.box-3col-item {
+    padding: 1em;
+    margin: 4em 2em 1.5em 2em;
     border: 1px solid rgba(0,0,0,0);
     -webkit-transition: outline 0.2s ease-out;
     transition: outline 0.2s ease-out;
 }
 
-.product-item:hover, .product-item:focus {
+.box-3col-item:hover, .box-3col-item:focus {
     border: 1px solid rgb(0,0,0);
     outline-offset: 1px;
 }
 
+.box-3col-item-info, .box-2col-item-info {
+    padding: 0;
+}
+
 /* STYLING FOR INDIVIDUAL GRID PRODUCT CARDS */
-.product-item img {
+.box-3col-item img {
     /* centering images | https://www.w3schools.com/howto/howto_css_image_center.asp */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 250px;
+}
+
+.box-2col-img, .box-2col-info {
+    padding: 0;
 }
 
 .item-label {
@@ -292,11 +305,14 @@ div {
     color: rgb(202,24,24);
 }
 
-/* 
-    PAGE STYLINGS ------------------------------
-*/
+/* Styling for cart */
+#cart {
+    border-top:1px solid rgb(0,0,0);
+    border-bottom: 1px solid rgb(0,0,0);
+    margin: 0 0 3em 0;
+}
 
-/* STYLING FOR HOME PAGE */
+/* Styling for home page */
 .slides {
     display: block;
     padding: 0;
@@ -336,21 +352,23 @@ div {
 }
 
 /* STYLING FOR PRODUCT PAGE */
+.box-2col-img, .box-2col-info {
+    margin-top: 0;
+}
+
+.box-2col-info {
+    padding: 1em 1em 1em 2em;
+}
+
+.flexbox-quantity {
+    padding: 0;
+}
+
 .item-img {
     height: auto;
     max-width: 100%;
     padding: 1.25em 1em;
 }
-
-.product-info {
-    padding: 1em 1em;
-}
-
-.divider {
-    border-top: 1px solid rgb(221,218,213);
-    padding: 1em 1em;
-}
-
 
 .accordion>input[name="collapse"] {
     display: none;
@@ -364,11 +382,11 @@ div {
 }
 
 .accordion label {
-    cursor: pointer;
-    padding: 0.5em;
+    display: block;
 }
 
 .accordion-content {
+    padding: 0;
     border-top: 1px solid rgba(0,0,0);
 }
 
@@ -379,7 +397,7 @@ div {
 .accordion .handle label:before {
     content: "▾";
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 0.5em;
     line-height: 1.556em;
     vertical-align: middle;
     transition: 0.4s;
@@ -396,8 +414,19 @@ div {
   transition: height 0.5s;
 }
 
+.accordion:last-of-type {
+    margin-top: 1.5em;
+}
+
 /* referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */
 
+.reviews {
+    padding: 0 3em 0 3em;
+}
+
+.reviews>section {
+    border-top: 1px solid rgb(0,0,0);
+}
 
 /* STYLING FOR CART PAGE */
 
@@ -424,9 +453,3 @@ div {
 textarea {
     max-width: 100%;
 }
-
-.contact-fields > a {
-    justify-content: flex-end;
-}
-
-
