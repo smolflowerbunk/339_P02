@@ -119,19 +119,22 @@ footer a:hover, footer a:focus {
 
 /* Styling for Size Selection button */
 #size {
+    margin: 0 1em 1em 0;
     background-color: rgb(255,255,255);
     outline: 1px solid rgb(221,218,213);
     outline-offset: -1px;
 }
 
-#size:hover, #size:focus {
+#size:hover {
     color: rgb(173,133,13);
     outline: 1px solid rgb(241,234,208);
     outline-offset: -1px;
 }
 
-#size:active {
-    
+#size:focus {
+    background-color: rgb(241,234,208);
+    outline: 1px solid rgb(0,0,0);
+    color: rgb(0,0,0);
 }
 
 /* Styling for text input field */
@@ -157,16 +160,6 @@ form {
 textarea {
     width: 100%;
 }
-
-/* Styling for quantity drop-down */
-select {
-    margin-right: 2em;
-}
-
-#select-size {
-    padding: 1em 2em;
-}
-
 
 
 /* 
@@ -248,6 +241,10 @@ ol {
 /* 
   BODY ELEMENTS ------------------------------
 */
+
+div {
+    padding: 0 2em 0 2em;
+}
 
 /* Styling for grid */
 .product-grid a {
