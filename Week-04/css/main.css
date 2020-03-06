@@ -182,6 +182,7 @@ footer {
 /* Styling for Submit/Reset button */
 .button-submit-reset {
     letter-spacing: 0.05em;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     display: block;
@@ -238,7 +239,7 @@ form>label {
     text-transform: uppercase;
     letter-spacing: 0.04em;
     font-size: 0.875em;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .input-field {
@@ -246,6 +247,7 @@ form>label {
     display: block;
     padding: 0.875em;
     font-size: 0.875em;
+    font-weight: 300;
     width: 100%;
     
     letter-spacing: 0.02em;
@@ -257,9 +259,17 @@ form>label {
     outline: 1px solid rgb(0,0,0);
 }
 
+.input-field:last-of-type, textarea:last-of-type {
+    margin-bottom: 2em;
+}
+
+.input-field.contact {
+    margin-bottom: 0.875em;
+}
+
 textarea {
     resize: vertical;
-    margin-bottom: 0.875em;
+    margin-top: 0.75em;
     width: 100%;
     border: 1px solid rgb(221,218,213);
 }
@@ -597,6 +607,25 @@ section .button-submit-reset {
 .flexbox-3col>.hidden {
     display: none;
 }
+
+
+/* CHECKOUT PROCESS */
+.checkout-breadcrumbs p {
+    font-weight: 500;
+}
+.checkout-breadcrumbs a {
+    font-weight: 300;
+    color: rgb(173,133,13);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+.checkout-breadcrumbs a:hover, .checkout-breadcrumbs a:focus {
+    border-bottom: 1px solid rgb(173,133,13);
+    transition: 0.2s ease-in-out;
+}
+
+
 
 /* ORDER TRACKER + TRACKING PROGRESS */
 

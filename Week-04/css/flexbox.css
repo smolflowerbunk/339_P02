@@ -188,7 +188,27 @@ header>nav {
 
 /* FAQ & SHIPPING */
 .flexbox-1col {
-    padding: 0 10%;
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    width: 100%;
+        
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+.box-1col-item {
+    flex: 1 1 100%;
+}
+
+.box-1col-form {
+    flex: 0 1 60%;
 }
 
 /* CART PAGE */
@@ -363,6 +383,16 @@ header>nav {
     
     .box-3col-cart img {
         max-width: 100%;
+    }
+    
+    .checkout-breadcrumbs {
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .box-1col-form {
+        flex: 1 1 100%;
     }
 }
 
