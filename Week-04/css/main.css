@@ -120,12 +120,14 @@ header .link-active {
     line-height: 1.556em;
     transform: rotate(0deg);
     transform-origin: center;
+    -webkit-transition: transform 0.4s ease-in;
     transition: transform 0.4s ease-in;
 }
 
 .nav-mobile>input[name="collapse"]:checked ~ .nav-mobile-handle label:before {
     transform: rotate(180deg);
     transform-origin: center;
+    -webkit-transition: transform 0.4s ease-out;
     transition: transform 0.4s ease-out;
 }
 
@@ -142,18 +144,18 @@ footer {
 }
 
 .nav-footer a {
+    text-align: center;
     font-size: 0.875em;
-    margin: 0 1em 1em 1em;
+    margin: 1em;
     text-decoration: none;
     color: rgb(0,0,0);
     text-transform: uppercase;
-    border-bottom: 1px solid rgba(0,0,0,0);
-    -webkit-transition: border-color 0.2s ease-out;
-    transition: border-color 0.2s ease-out;
 }
 
 .nav-footer a:hover, .nav-footer a:focus {
-    border-bottom: 1px solid rgb(0,0,0);
+    text-decoration: underline;
+    -webkit-transition: text-decoration 0.2s ease-in;
+    transition: text-decoration 0.2s ease-in;
 }
 
 
