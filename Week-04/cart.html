@@ -57,11 +57,11 @@
                         <h2>Product Name</h2>
                     </div>
 
-                    <div class="box-3col-heading">
+                    <div class="box-3col-heading unhide">
                         <h2>Price</h2>
                     </div>
 
-                    <div class="box-3col-heading">
+                    <div class="box-3col-heading unhide">
                         <h2>Quantity</h2>
                     </div>
                 </div>
@@ -69,9 +69,19 @@
                 <!--create a container to house the grid items-->
                 <div class="flexbox-3col" id="cart">
                     <!--each grid item is a different div-->
-                    <div class="box-3col-cart">
+                    <div class="box-3col-cart" id="cart-product">
                          <img src="img/pfruit-square.jpg" alt="Passionfruit Chocolate">
                         <h3>Passionfruit Swirl — Box of 6</h3>
+                    </div>
+                    
+                    <div class="flexbox-3col hidden" id="cart-heading">
+                        <div class="box-3col-heading">
+                            <h2>Price</h2>
+                        </div>
+
+                        <div class="box-3col-heading">
+                            <h2>Quantity</h2>
+                        </div>
                     </div>
 
                     <div class="box-3col-cart">
@@ -83,11 +93,14 @@
                     </div>
                 </div>
 
-                <div class="flexbox-3col" id="right-col">
-                    <div class="box-3col-cart">
+                <div class="flexbox-1col right-col">
+                    <div class="box-1col-cart">
                         <h3 class="cart-total">Order Total: $48.00</h3>
                     </div>
-                    <div class="box-3col-cart">
+                </div>
+                
+                <div class="flexbox-1col right-col">
+                    <div class="box-1col-cart">
                         <a class="button-submit-reset cart-total" href="buyer-info.html">Checkout</a>
                     </div>
                 </div>

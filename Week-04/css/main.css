@@ -576,6 +576,10 @@ section {
     margin: 0 2em 2em 0;
 }
 
+.flexbox-3col>.hidden {
+    display: none;
+}
+
 /* ORDER TRACKER + TRACKING PROGRESS */
 
 /* order progress bar | referenced from http://kodhus.com/newsite/step-progress-bar-css-only/ */
