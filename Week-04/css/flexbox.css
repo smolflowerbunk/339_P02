@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 }
 
+/* positioning footer at the bottom of the page | https://css-tricks.com/couple-takes-sticky-footer/ */
 body {
     display: flex;
     flex-direction: column;
@@ -18,7 +19,7 @@ footer {
 }
 
 /* MAIN NAVIGATION BAR */
-.top-nav {
+header {
     display: -webkit-flex;
 	display: -ms-flex;
     display: flex;
@@ -32,7 +33,7 @@ footer {
     justify-content: space-between;
 }
 
-.nav-main {
+header>nav {
     /* flexbox basics | https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox */
     display: -webkit-inline-flex;
 	display: -ms-inline-flex;
@@ -45,19 +46,21 @@ footer {
     float: right;
 }
 
-
-/* FOOTER NAVIGATION */
-footer {
-    display: -webkit-flex;
-	display: -ms-flex;
-    display: flex;
-    
+/* MOBILE NAVIGATION */
+.nav-mobile {
     -webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    
 }
 
-.nav-footer {
+
+/* FOOTER NAVIGATION */
+.nav-footer a {
     display: -webkit-inline-flex;
 	display: -ms-inline-flex;
     display: inline-flex;
@@ -65,6 +68,10 @@ footer {
     -webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    
+    -webkit-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
 }
 
 
@@ -78,10 +85,11 @@ footer {
 	-ms-flex-wrap: wrap;
     flex-wrap: wrap;
     
+    width: 100%;
+    
     -webkit-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-
 }
 
 #box-2item {
@@ -96,6 +104,31 @@ footer {
 
 .box-3col-item-info img {
     width: 100%
+}
+
+
+/* HOMEPAGE BANNER */
+.banner h2 {
+    font-size: 4em;
+    margin-bottom: 1.5em;
+}
+
+.banner a {
+    font-size: 1.5em;
+}
+
+.banner-img {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    -webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 }
 
 
@@ -153,6 +186,11 @@ footer {
     float: right;
 }
 
+/* FAQ & SHIPPING */
+.flexbox-1col {
+    padding: 0 10%;
+}
+
 /* CART PAGE */
 #cart>.flexbox-3col {
     align-items: center;
@@ -162,7 +200,7 @@ footer {
 .box-3col-cart, .box-3col-heading {
     padding: 2em;
     text-align: center;
-    flex: 1 1 30%;
+    flex: 0 1 30%;
     
     -webkit-justify-content: space-between;
     -ms-justify-content: space-between;
@@ -170,35 +208,141 @@ footer {
 }
 
 .box-3col-cart img {
-    width: 50%;
+    max-width: 100%;
 }
 
-#right-col {
+.right-col {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    padding-right: 2em;
+    
+    -webkit-justify-content: flex-end;
+    -ms-justify-content: flex-end;
     justify-content: flex-end;
-    flex-direction: column;
-}
-
-
-/* FAQ & SHIPPING */
-.flexbox-1col {
-    padding: 0 10%;
 }
 
 
 /* MEDIA QUERIES */
+@media (max-width: 105em) {
+    .banner h2 {
+        font-size: 4em;
+        margin-bottom: 1em;
+    }
+
+    .banner a {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 90em) {
+    .banner h2 {
+        font-size: 3.5em;
+    }
+
+    .banner a {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 70em) {
+    .box-3col-cart img {
+        max-width: 60%;
+    }
+}
+
 @media (max-width: 70em) {
+    /* 
+        HEADER CONTENT -------------------------------
+    */
+    header {
+        justify-content: center;
+    }
+    
+    /* 
+        Main Navigation
+        - centered, full-width
+    */
+    header>nav {
+        display: flex;
+        flex: 0 1 100%;
+        justify-content: space-around;
+    }
+    
+    /* Main Navigation Links */
+    .nav-main a {
+        display: flex;
+        flex: 1 0 20%;
+        justify-content: center;
+    }
+    
+    /* Footer */
+    footer>nav {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 0 1 100%;
+
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+    }
+    
+    .nav-footer a {
+        display: flex;
+        flex: 1 0 40%;
+        
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+    }
+    
+    /* 3 column grid */
+    
     .flexbox-3col {
         -webkit-justify-content: space-around;
         -ms-justify-content: space-around;
         justify-content: space-around;
     }
     
+    /*
+        BANNER CONTENT -------------------------------
+    */
+    .banner>div {
+        padding-top: 0;
+    }
+    
+    .banner h2 {
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+
+    .banner a {
+        font-size: 1em;
+    }
+    
+    /*
+        PRODUCT GRID ----------------------------------
+    */
+    
     .box-3col-item {
         flex: 1 1 30%;
+    }
+    
+    .box-3col-item:last-of-type {
+        max-width: 50%;
     }
 }
 
 @media (max-width: 55em) {
+    .banner h2 {
+        font-size: 2.5em;
+    }
+
+    .banner a {
+        font-size: 0.875em;
+    }
+    
     .flexbox-2col {
 		flex-direction: column;
         align-items: center;
@@ -212,50 +356,93 @@ footer {
     .box-2col-item {
         width: 100%;
     }
-}
-
-@media (min-width: 55em) { 
-    .button-nav {
-        flex: 0 1 20%;
-        flex-direction: row;
+    
+    .box-3col-cart img {
+        max-width: 50%;
     }
     
-    .subhead-paragraph {
-        display: inline-block;
-        width: 40em;
+    .box-3col-cart img {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 50em) { 
-    .top-nav {
+    /*
+        HEADER NAVIGATION ------------------------------
+    */
+    
+    /* Main Navigation Links */
+    .nav-main a {
+        margin: 0.5em;
+        flex: 1 0 40%;
+    }
+    
+    /* Footer Links */
+    .nav-footer a{
+        flex: 1 0 100%;
+    }
+    
+    /* BANNER */
+    .banner-img {
+        display: none;
+    }
+    
+    .banner-img-square {
+        display: block;
+    }
+    
+    .banner>div {
+        height: 60%;
+        margin-top: -25%;
+    }
+    
+    .banner h2 {
+        font-size: 3.5em;
+        margin-bottom: 1.5em;
+    }
+    
+    .banner a {
+        font-size: 1.25em;
+    }
+    
+    /* CART */
+    #cart {
+        padding: 0;
+    }
+    
+    .flexbox-3col>.unhide{
+        display: none;
+    }
+    
+    .flexbox-3col>.hidden {
+        display: flex;
+        padding: 0;
+    }
+    
+    .hidden>.box-3col-heading {
+        padding: 2em;
+    }
+    
+    #cart-product{
+        flex: 2 1 100%;
+    }
+    
+    .box-3col-cart, .box-3col-heading {
+        flex: 1 1 50%;
+    }
+    
+    .right-col {
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
         justify-content: center;
     }
     
-    .nav-main {
-        flex-direction: column;
-        flex: 1 1 100%;
-    }
-    
-    .subhead-paragraph {
-        display: block;
-        width: auto;
-    }
-
-    .carousel-text {
-        position: static;
-        color: rgb(0,0,0);
-    }
-
-    .carousel-link {
-        color: rgb(0,0,0);
-        text-decoration: none;
-        border-bottom: 1px solid rgba(0,0,0,0);
-        -webkit-transition: border-color 0.2s ease-out;
-        transition: border-color 0.2s ease-out;
+    .box-3col-cart img {
+        max-width: 70%;
     }
 }
 
-@media (max-width: 40em) {    
+@media (max-width: 40em) {      
     .nav-footer {
         flex: 1 1 100%;
         flex-direction: column;
@@ -273,11 +460,63 @@ footer {
         flex-direction: column;
     }
     
+    .box-3col-item:last-of-type {
+        max-width: 100%;
+    }
+    
     .box-quantity-item {
         flex: 1 1 100%;
     }
     
     .box-quantity-item:last-of-type {
         margin-top: 0.5em;
+    }
+    
+    .banner>div {
+        height: 40%;
+        margin-top: -35%;
+    }
+    
+    .banner h2 {
+        font-size: 2em;
+        margin-bottom: 1.5em;
+    }
+    
+    .banner a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 30em) {
+    /*
+        HEADER NAVIGATION ------------------------------
+    */
+    
+    /* Main Navigation Links */
+    .nav-main {
+        display: none;
+    }
+    
+    .nav-main a {
+        margin: 0.5em;
+        flex-direction: column;
+        flex: 1 1 100%;
+        border: 1px solid rgb(0,0,0);
+    }
+    
+    .nav-main>.link-active {
+        border: 1px solid rgb(173,133,13);
+    }
+    
+    .nav-mobile {
+        display: -webkit-flex;
+	    display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+    }
+    
+    .box-3col-cart img {
+        max-width: 100%;
     }
 }
