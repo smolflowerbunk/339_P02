@@ -91,10 +91,11 @@ footer {
 	-ms-flex-wrap: wrap;
     flex-wrap: wrap;
     
+    width: 100%;
+    
     -webkit-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-
 }
 
 #box-2item {
@@ -233,6 +234,10 @@ footer {
     .box-3col-item {
         flex: 1 1 30%;
     }
+    
+    .box-3col-item:last-of-type {
+        max-width: 50%;
+    }
 }
 
 @media (max-width: 55em) {
@@ -302,6 +307,10 @@ footer {
     .box-3col-item {
         flex: 1 1 100%;
         flex-direction: column;
+    }
+    
+    .box-3col-item:last-of-type {
+        max-width: 100%;
     }
     
     .box-quantity-item {

@@ -96,6 +96,12 @@ header .link-active {
 .nav-mobile-handle {
     display: block;
     border: 1px solid rgb(0,0,0);
+    padding: 0;
+}
+
+.nav-mobile label {
+    display: block;
+    padding: 1em;
 }
 
 .nav-mobile-handle:hover, .nav-mobile-handle:focus {
@@ -113,6 +119,7 @@ header .link-active {
     margin-right: 0.5em;
     line-height: 1.556em;
     transform: rotate(0deg);
+    transform-origin: center;
     transition: transform 0.4s ease-in;
 }
 
@@ -195,22 +202,23 @@ footer {
 }
 
 /* Styling for Size Selection button */
-#size {
+.size {
     margin: 0 0 1em 0;
     background-color: rgb(255,255,255);
-    outline: 1px solid rgb(221,218,213);
-    outline-offset: -1px;
+    border: 1px solid rgb(221,218,213);
+    outline: none;
 }
 
-#size:hover {
-    outline: 1px solid rgb(0,0,0);
-    outline-offset: -1px;
+.size:hover {
+    border: 1px solid rgb(0,0,0);
+    outline: none;
 }
 
-#size:focus {
+.size:focus {
     background-color: rgb(241,234,208);
-    outline: 1px solid rgb(0,0,0);
+    border: 1px solid rgb(0,0,0);
     color: rgb(0,0,0);
+    outline: none;
 }
 
 
@@ -350,7 +358,7 @@ div {
 }
 
 section {
-    margin-top: 2.5em;
+    margin-top: 0;
 }
 
 .content {
@@ -493,11 +501,14 @@ section {
     display: none;
 }
 
+.accordion label {
+    margin-top: 2.5em;
+}
+
 .accordion .accordion-content {
-    background-color: #fff;
     overflow: hidden;
     height: 0;
-    transition: 0.5s;
+    transition: height 0.5s ease-in;
 }
 
 .accordion label {
@@ -519,18 +530,20 @@ section {
     margin-right: 0.5em;
     line-height: 1.556em;
     vertical-align: middle;
-    transition: 0.4s;
+    transform: rotate(0deg);
+    transform-origin: center;
+    transition: transform 0.4s ease-in;
 }
 
 .accordion>input[name="collapse"]:checked ~ .handle label:before {
     transform: rotate(180deg);
     transform-origin: center;
-    transition: 0.4s;
+    transition: transform 0.4s ease-out;
 }
 
 .accordion>input[name="collapse"]:checked ~ .accordion-content {
   height: auto;
-  transition: height 0.5s;
+  transition: height 0.5s ease-out;
 }
 
 .reviews {
