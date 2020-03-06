@@ -397,6 +397,13 @@ section {
     margin-right: auto;
 }
 
+.box-2col-item img {
+    /* centering images | https://www.w3schools.com/howto/howto_css_image_center.asp */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .box-2col-img {
     padding: 0;
 }
@@ -496,11 +503,21 @@ section {
     transition: outline 0.2s ease-in;
 }
 
+/* ABOUT PAGE */
+.about {
+    width: 100%;
+    padding: 0;
+}
+
 /* PRODUCT PAGE */
 .item-img {
     height: auto;
     max-width: 100%;
     padding: 1.25em 1em;
+}
+
+section .button-submit-reset {
+    display: inline-block;
 }
 
 /* collapsible | referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */

@@ -132,6 +132,13 @@ header>nav {
 }
 
 
+/* ABOUT PAGE */
+.about {
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
 /* PRODUCT PAGE */
 .flexbox-2col {
     display: -webkit-inline-flex;
