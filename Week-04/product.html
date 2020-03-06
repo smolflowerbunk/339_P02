@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html>
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
@@ -21,16 +21,37 @@
 
     <body>
         <div class="content">
-            <!-- NAVIGATION HERE -->
-            <div class="top-nav">
+            <!-- HEADER -->
+            <header>
                 <h1 class="logo"><a href="home.html">petit amours</a></h1>
+                
+                <!-- MAIN NAVIGATION -->
                 <nav class="nav-main">
-                    <a class="button-nav nav-active" href="shop.html">Shop</a>
-                    <a class="button-nav" href="about.html">About</a>
-                    <a class="button-nav" href="contact.html">Contact</a>
-                    <a class="button-nav" href="cart.html">Cart</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="cart.html">Cart</a>
                 </nav>
-            </div>
+                
+                <!-- MOBILE NAVIGATION -->
+                <section class="nav-mobile">
+                    <input type="checkbox" name="collapse" id="handle0">
+
+                    <button class="nav-mobile-handle">
+                        <label for="handle0">Navigation
+                        </label>
+                    </button>
+
+                    <div class="nav-mobile-content">
+                        <nav class="nav-mobile-links">
+                            <a href="shop.html">Shop</a>
+                            <a href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="cart.html">Cart</a>
+                        </nav>
+                    </div>
+                </section>
+            </header>
 
             <div class="flexbox-2col">
                 <!-- product images -->
@@ -106,12 +127,10 @@
                 <a href="faq.html">FAQ</a>
                 <a href="shipping-returns.html">Shipping and Returns</a>
                 <a href="tracking.html">Track Your Order</a>
-                <a href="references.html">Citations</a>
                 <a href="styles.html">Style Guide</a>
+                <a href="references.html">References</a>
+                <a href="https://github.com/smolflowerbunk/339_P02">Github Repository</a>
             </nav>
         </footer>
-
-        <!---- JAVASCRIPT ----->
-        <script src="js/dropdown.js"></script>
     </body>
 </html>

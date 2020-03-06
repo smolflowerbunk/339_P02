@@ -1,30 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <title>About | petit amours</title>
-
+        
+        <!-- 
+            Gelasio | https://fonts.google.com/specimen/Gelasio 		
+            Public Sans | https://fonts.google.com/specimen/Public+Sans
+        -->
+        
         <link href="https://fonts.googleapis.com/css?family=Gelasio:400,600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Public+Sans:200,300,300i,400,400i,500,500i&display=swap" rel="stylesheet">
         
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/flexbox.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/flexbox.css" rel="stylesheet">
     </head>
     
     <body>
+        
+        <!-- CONTENT CONTAINER --> 
         <div class="content">
-            <div class="top-nav">
+            
+            <!-- HEADER -->
+            <header>
                 <h1 class="logo"><a href="home.html">petit amours</a></h1>
+                
+                <!-- MAIN NAVIGATION -->
                 <nav class="nav-main">
-                    <a class="button-nav" href="shop.html">Shop</a>
-                    <a class="button-nav nav-active" href="about.html">About</a>
-                    <a class="button-nav" href="contact.html">Contact</a>
-                    <a class="button-nav" href="cart.html">Cart</a>
+                    <a href="shop.html">Shop</a>
+                    <a class="link-active" href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="cart.html">Cart</a>
                 </nav>
-            </div>
+                
+                <!-- MOBILE NAVIGATION -->
+                <section class="nav-mobile">
+                    <input type="checkbox" name="collapse" id="handle1">
+
+                    <button class="nav-mobile-handle">
+                        <label for="handle1">Navigation
+                        </label>
+                    </button>
+
+                    <div class="nav-mobile-content">
+                        <nav class="nav-mobile-links">
+                            <a href="shop.html">Shop</a>
+                            <a class="link-active" href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="cart.html">Cart</a>
+                        </nav>
+                    </div>
+                </section>
+            </header>
 
             <div class="page-heading">
                 <h1>About Us</h1>
@@ -64,8 +94,9 @@
                 <a href="faq.html">FAQ</a>
                 <a href="shipping-returns.html">Shipping and Returns</a>
                 <a href="tracking.html">Track Your Order</a>
-                <a href="references.html">Citations</a>
                 <a href="styles.html">Style Guide</a>
+                <a href="references.html">References</a>
+                <a href="https://github.com/smolflowerbunk/339_P02">Github Repository</a>
             </nav>
         </footer>
     </body>

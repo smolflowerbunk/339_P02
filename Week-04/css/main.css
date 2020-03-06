@@ -1,29 +1,35 @@
-/*
-  DEFAULT STYLES
-*/
+/* ///////////////////////////////////////////////////////
+
+  DEFAULT STYLES ----------------------------------------
+
+/////////////////////////////////////////////////////// */
+
 body {
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
 }
 
-/* 
-    NAVIGATION ELEMENTS ---------------------------------------
-*/
+
+
+/* ////////////////////////////////////////////////////////
+
+    NAVIGATION ELEMENTS -----------------------------------
+
+///////////////////////////////////////////////////////// */
 
 /* Main Navigation */
-.top-nav {
+header {
     margin: 0em 0em 2em 0em;
     padding: 2em 2em 1em 2em;
     border-bottom: 1px solid rgb(221,218,213);
 }
 
-.button-nav {
+.nav-main a, .nav-mobile a, .nav-mobile-handle {
     /* letter spacing | https://www.w3schools.com/cssref/pr_text_letter-spacing.asp */
     letter-spacing: 0.05em;
     text-align: center;
     padding: 1em 1.5em;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 0.5em;
     color: rgb(0,0,0);
     border: 1px solid rgb(255,255,255);
     background-color: #FFFFFF;
@@ -33,27 +39,102 @@ body {
     transition: border-color 0.3s ease-out;
 }
 
-.button-nav:hover, .button-nav:focus {
-    border: 1px solid rgb(0,0,0);
+.nav-main>a:hover, .nav-main>a:focus {
+    color: rgb(173,133,13);
+    border: 1px solid rgb(173,133,13);
 }
 
-.button-nav:active {
+.nav-main>a:active {
+    color: rgb(0,0,0);
+    border: 1px solid rgb(0,0,0);
     background-color: rgb(241,234,208);
 }
 
-.nav-active {
+header .link-active {
     color: rgb(173,133,13);
+}
+
+/* Main Navigation: Mobile */
+
+/* collapsible styling | referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */
+.nav-mobile {
+    display: none;
+    margin-top: 0.5em;
+}
+
+.nav-mobile>h2 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.nav-mobile-links a {
+    border: 1px solid rgb(0,0,0);
+    margin: 0.5em;
+}
+
+.nav-mobile-links a:hover, .nav-mobile-links a:focus {
+    color: rgb(173,133,13);
+    border: 1px solid rgb(173,133,13);
+}
+
+.nav-mobile-links>a:active {
+    color: rgb(0,0,0);
+    border: 1px solid rgb(0,0,0);
+    background-color: rgb(241,234,208);
+}
+
+.nav-mobile>input[name="collapse"] {
+    display: none;
+}
+
+.nav-mobile .nav-mobile-content {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease-in;
+}
+
+.nav-mobile-handle {
+    display: block;
+    border: 1px solid rgb(0,0,0);
+}
+
+.nav-mobile-handle:hover, .nav-mobile-handle:focus {
+    color: rgb(173,133,13);
+    border: 1px solid rgb(173,133,13);
+}
+
+.nav-mobile-content {
+    padding: 0;
+}
+
+.nav-mobile-handle label:before {
+    content: "▾";
+    display: inline-block;
+    margin-right: 0.5em;
+    line-height: 1.556em;
+    transform: rotate(0deg);
+    transition: transform 0.4s ease-in;
+}
+
+.nav-mobile>input[name="collapse"]:checked ~ .nav-mobile-handle label:before {
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: transform 0.4s ease-out;
+}
+
+.nav-mobile>input[name="collapse"]:checked ~ .nav-mobile-content {
+  height: 15.5em;
+  transition: height 0.5s ease-out;
 }
 
 /* Footer Links */
 footer {
-    /* positioning the footer at the bottom of the page | https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/*/
     padding: 3em 1em 3.5em 1em;
     background: rgb(241,234,208);
     width: 100%;
 }
 
-footer a {
+.nav-footer a {
     font-size: 0.875em;
     margin: 0 1em 1em 1em;
     text-decoration: none;
@@ -64,15 +145,17 @@ footer a {
     transition: border-color 0.2s ease-out;
 }
 
-footer a:hover, footer a:focus {
+.nav-footer a:hover, .nav-footer a:focus {
     border-bottom: 1px solid rgb(0,0,0);
 }
 
 
 
-/* 
-  LINKS & BUTTONS ------------------------------
-*/
+/* ///////////////////////////////////////////////////
+
+  LINKS & BUTTONS -----------------------------------
+
+/////////////////////////////////////////////////// */
 
 /* Styling for in-text links */
 .link-in-text {
@@ -130,9 +213,14 @@ footer a:hover, footer a:focus {
     color: rgb(0,0,0);
 }
 
-/* 
+
+
+/* /////////////////////////////////////////////////////
+
   TEXT FORMS -------------------------------------------
-*/
+
+///////////////////////////////////////////////////// */
+
 form {
     padding: 1em 0;
 }
@@ -173,12 +261,13 @@ textarea:focus {
 }
 
 
-/* 
-  TEXT STYLING --------------------------
-*/
+/* //////////////////////////////////////////////////////
 
-h1, 
-h3, .reviews label {
+  BODY TEXT STYLING -------------------------------------
+
+////////////////////////////////////////////////////// */
+
+h1, h3, .reviews label {
     font-family: Gelasio, serif;
     text-transform: uppercase;
 }
@@ -250,9 +339,11 @@ ol {
 
 
 
-/* 
-  BODY ELEMENTS -----------------------------------------
-*/
+/* /////////////////////////////////////////////////////////
+
+  BODY CONTAINERS ------------------------------------------
+
+////////////////////////////////////////////////////////// */
 
 div {
     padding: 0 2em 0 2em;
@@ -321,6 +412,10 @@ section {
     margin-bottom: 3em;
 }
 
+/*
+    COMPONENT STYLING
+*/
+
 /* Product Card Details */
 .item-label {
     text-align: center;
@@ -340,7 +435,13 @@ section {
     color: rgb(202,24,24);
 }
 
-/* Styling for home page */
+/* ///////////////////////////////////////////////////////
+
+    PAGE-SPECIFIC STYLING --------------------------------
+
+/////////////////////////////////////////////////////// */
+
+/* HOME PAGE */
 .slides {
     display: block;
     padding: 0;
@@ -379,14 +480,14 @@ section {
     border-bottom: 1px solid rgb(255,255,255);
 }
 
-/* Styling for Product Page */
+/* PRODUCT PAGE */
 .item-img {
     height: auto;
     max-width: 100%;
     padding: 1.25em 1em;
 }
 
-/* collapsible styling | referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */
+/* collapsible | referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */
 
 .accordion>input[name="collapse"] {
     display: none;
@@ -405,7 +506,7 @@ section {
 
 .accordion-content {
     padding: 0;
-    border-top: 1px solid rgba(0,0,0);
+    border-top: 1px solid rgb(0,0,0);
 }
 
 .accordion label:hover, .accordion label:focus {
@@ -440,7 +541,7 @@ section {
     border-top: 1px solid rgb(0,0,0);
 }
 
-/* STYLING FOR CART PAGE */
+/* CART PAGE */
 #cart>#cart{
     border-bottom: 1px solid rgb(0,0,0);
     margin: 0 0 3em 0;
@@ -456,7 +557,7 @@ section {
     margin: 0 2em 2em 0;
 }
 
-/* STYLING FOR ORDER TRACKER + TRACKING PROGRESS */
+/* ORDER TRACKER + TRACKING PROGRESS */
 
 /* order progress bar | referenced from http://kodhus.com/newsite/step-progress-bar-css-only/ */
 

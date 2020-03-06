@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 }
 
+/* positioning footer at the bottom of the page | https://css-tricks.com/couple-takes-sticky-footer/ */
 body {
     display: flex;
     flex-direction: column;
@@ -18,7 +19,7 @@ footer {
 }
 
 /* MAIN NAVIGATION BAR */
-.top-nav {
+header {
     display: -webkit-flex;
 	display: -ms-flex;
     display: flex;
@@ -32,7 +33,7 @@ footer {
     justify-content: space-between;
 }
 
-.nav-main {
+header>nav {
     /* flexbox basics | https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox */
     display: -webkit-inline-flex;
 	display: -ms-inline-flex;
@@ -43,6 +44,18 @@ footer {
     flex-wrap: wrap;
     
     float: right;
+}
+
+/* MOBILE NAVIGATION */
+.nav-mobile {
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    
 }
 
 
@@ -187,6 +200,30 @@ footer {
 
 /* MEDIA QUERIES */
 @media (max-width: 70em) {
+    /* 
+        HEADER CONTENT -------------------------------
+    */
+    header {
+        justify-content: center;
+    }
+    
+    /* 
+        Main Navigation
+        - centered, full-width
+    */
+    header>nav {
+        display: flex;
+        flex: 0 1 100%;
+        justify-content: space-around;
+    }
+    
+    /* Main Navigation Links */
+    nav a {
+        display: flex;
+        flex: 1 0 20%;
+        justify-content: center;
+    }
+    
     .flexbox-3col {
         -webkit-justify-content: space-around;
         -ms-justify-content: space-around;
@@ -212,13 +249,6 @@ footer {
     .box-2col-item {
         width: 100%;
     }
-}
-
-@media (min-width: 55em) { 
-    .button-nav {
-        flex: 0 1 20%;
-        flex-direction: row;
-    }
     
     .subhead-paragraph {
         display: inline-block;
@@ -227,13 +257,14 @@ footer {
 }
 
 @media (max-width: 50em) { 
-    .top-nav {
-        justify-content: center;
-    }
+    /*
+        HEADER NAVIGATION ------------------------------
+    */
     
-    .nav-main {
-        flex-direction: column;
-        flex: 1 1 100%;
+    /* Main Navigation Links */
+    .nav-main a {
+        margin: 0.5em;
+        flex: 1 0 40%;
     }
     
     .subhead-paragraph {
@@ -255,7 +286,7 @@ footer {
     }
 }
 
-@media (max-width: 40em) {    
+@media (max-width: 40em) {      
     .nav-footer {
         flex: 1 1 100%;
         flex-direction: column;
@@ -279,5 +310,35 @@ footer {
     
     .box-quantity-item:last-of-type {
         margin-top: 0.5em;
+    }
+}
+
+@media (max-width: 30em) {
+    /*
+        HEADER NAVIGATION ------------------------------
+    */
+    
+    /* Main Navigation Links */
+    .nav-main {
+        display: none;
+    }
+    
+    .nav-main a {
+        margin: 0.5em;
+        flex-direction: column;
+        flex: 1 1 100%;
+        border: 1px solid rgb(0,0,0);
+    }
+    
+    .nav-main>.link-active {
+        border: 1px solid rgb(173,133,13);
+    }
+    
+    .nav-mobile {
+        display: -webkit-flex;
+	    display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
     }
 }
