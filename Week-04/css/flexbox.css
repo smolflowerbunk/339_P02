@@ -113,6 +113,31 @@ footer {
 }
 
 
+/* HOMEPAGE BANNER */
+.banner h2 {
+    font-size: 4em;
+    margin-bottom: 1.5em;
+}
+
+.banner a {
+    font-size: 1.5em;
+}
+
+.banner-img {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    -webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+
 /* PRODUCT PAGE */
 .flexbox-2col {
     display: -webkit-inline-flex;
@@ -200,6 +225,27 @@ footer {
 
 
 /* MEDIA QUERIES */
+@media (max-width: 105em) {
+    .banner h2 {
+        font-size: 4em;
+        margin-bottom: 1em;
+    }
+
+    .banner a {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 90em) {
+    .banner h2 {
+        font-size: 3.5em;
+    }
+
+    .banner a {
+        font-size: 1em;
+    }
+}
+
 @media (max-width: 70em) {
     /* 
         HEADER CONTENT -------------------------------
@@ -231,6 +277,26 @@ footer {
         justify-content: space-around;
     }
     
+    /*
+        BANNER CONTENT -------------------------------
+    */
+    .banner>div {
+        padding-top: 0;
+    }
+    
+    .banner h2 {
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+
+    .banner a {
+        font-size: 1em;
+    }
+    
+    /*
+        PRODUCT GRID ----------------------------------
+    */
+    
     .box-3col-item {
         flex: 1 1 30%;
     }
@@ -241,6 +307,14 @@ footer {
 }
 
 @media (max-width: 55em) {
+    .banner h2 {
+        font-size: 2.5em;
+    }
+
+    .banner a {
+        font-size: 0.875em;
+    }
+    
     .flexbox-2col {
 		flex-direction: column;
         align-items: center;
@@ -254,11 +328,6 @@ footer {
     .box-2col-item {
         width: 100%;
     }
-    
-    .subhead-paragraph {
-        display: inline-block;
-        width: 40em;
-    }
 }
 
 @media (max-width: 50em) { 
@@ -270,11 +339,6 @@ footer {
     .nav-main a {
         margin: 0.5em;
         flex: 1 0 40%;
-    }
-    
-    .subhead-paragraph {
-        display: block;
-        width: auto;
     }
 
     .carousel-text {
@@ -288,6 +352,28 @@ footer {
         border-bottom: 1px solid rgba(0,0,0,0);
         -webkit-transition: border-color 0.2s ease-out;
         transition: border-color 0.2s ease-out;
+    }
+    
+    .banner-img {
+        display: none;
+    }
+    
+    .banner-img-square {
+        display: block;
+    }
+    
+    .banner>div {
+        height: 60%;
+        margin-top: -25%;
+    }
+    
+    .banner h2 {
+        font-size: 3.5em;
+        margin-bottom: 1.5em;
+    }
+    
+    .banner a {
+        font-size: 1.25em;
     }
 }
 
@@ -319,6 +405,20 @@ footer {
     
     .box-quantity-item:last-of-type {
         margin-top: 0.5em;
+    }
+    
+    .banner>div {
+        height: 40%;
+        margin-top: -35%;
+    }
+    
+    .banner h2 {
+        font-size: 2em;
+        margin-bottom: 1.5em;
+    }
+    
+    .banner a {
+        font-size: 1em;
     }
 }
 

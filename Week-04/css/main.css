@@ -326,7 +326,7 @@ p {
     line-height: 1.5em;
 }
 
-.subhead-paragraph {
+.page-heading>p {
     font-weight: 200;
     text-align: center;
     margin: auto;
@@ -450,42 +450,48 @@ section {
 /////////////////////////////////////////////////////// */
 
 /* HOME PAGE */
-.slides {
-    display: block;
+.banner {
     padding: 0;
     position: relative;
-    text-align: left;
+    margin-bottom: 4em;
 }
 
-.carousel-img {
-    max-width: 100%;
+.banner-img {
+    width: 100%;
 }
 
-.carousel-text, .carousel-link {
-    color: white;
+.banner-img-square {
+    display: none;
 }
 
-.carousel-text { /* referenced from w3schools how to position text over an image */
-    font-size: 2.5rem;
-
+.banner>div {
+    background-color: rgb(241,234,208);
     position: absolute;
-    bottom: 1em;
-    left: 1em;
+    height: 60%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    margin-top: -11%;
+    margin-left: -40%;
+    text-align: center;
 }
 
-.carousel-link {
-    font-size: 0.5em;
-    color: rgb(255,255,255);
-    /* underline transition | https://markrabey.com/2015/05/17/css-transition-for-text-decoration/ */
+.banner a {
+    color: rgb(0,0,0);
+    background-color: rgb(255,255,255);
+    text-transform: uppercase;
     text-decoration: none;
-    border-bottom: 1px solid rgba(255,255,255,0);
-    -webkit-transition: border-color 0.2s ease-out;
-    transition: border-color 0.2s ease-out;
-    
+    padding: 1.5em 2em;
+    outline: 1px solid rgba(0,0,0,0);
+    outline-offset: 5px;
+    -webkit-transition: outline 0.2s ease-out;
+    transition: outline 0.2s ease-out;
 }
 
-.carousel-link:hover, .carousel-link:focus {
-    border-bottom: 1px solid rgb(255,255,255);
+.banner a:hover, .banner a:focus {
+    outline: 1px solid rgb(0,0,0);
+    -webkit-transition: outline 0.2s ease-in;
+    transition: outline 0.2s ease-in;
 }
 
 /* PRODUCT PAGE */
