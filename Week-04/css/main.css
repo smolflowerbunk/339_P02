@@ -515,7 +515,10 @@ section {
 /* ABOUT PAGE */
 .about {
     width: 100%;
-    padding: 0;
+}
+
+#about-info {
+    padding: 0 3em;
 }
 
 /* PRODUCT PAGE */
@@ -523,10 +526,6 @@ section {
     height: auto;
     max-width: 100%;
     padding: 1.25em 1em;
-}
-
-section .button-submit-reset {
-    display: inline-block;
 }
 
 /* collapsible | referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */
@@ -586,6 +585,10 @@ section .button-submit-reset {
 
 .reviews>section {
     border-top: 1px solid rgb(0,0,0);
+}
+
+.write-review {
+    margin-bottom: 4em;
 }
 
 /* CART PAGE */
@@ -656,7 +659,7 @@ section .button-submit-reset {
       height: 30px;
       content: counter(step);
       counter-increment: step;
-      line-height: 3em;
+      line-height: 2em;
       border: 2px solid #7d7d7d;
       display: block;
       text-align: center;
