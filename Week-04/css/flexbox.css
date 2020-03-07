@@ -33,7 +33,7 @@ header {
     justify-content: space-between;
 }
 
-header>nav {
+.nav-main {
     /* flexbox basics | https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox */
     display: -webkit-inline-flex;
 	display: -ms-inline-flex;
@@ -284,7 +284,7 @@ header>nav {
         Main Navigation
         - centered, full-width
     */
-    header>nav {
+    .nav-main {
         display: flex;
         flex: 0 1 100%;
         justify-content: space-around;
@@ -518,33 +518,46 @@ header>nav {
 }
 
 @media (max-width: 30em) {
-    /*
-        HEADER NAVIGATION ------------------------------
-    */
-    
-    /* Main Navigation Links */
+    /* ///----------------------------------------------------------------------------------///
+
+                                            !!!
+
+    MOBILE NAVIGATION STYLING ---------------------------- DO NOT TOUCH THE SECTION BELOW
+                                            
+                                            !!!
+
+    /////----------------------------------------------------------------------------------/// */
     .nav-main {
         display: none;
-    }
-    
-    .nav-main a {
-        margin: 0.5em;
-        flex-direction: column;
-        flex: 1 1 100%;
-        border: 1px solid rgb(0,0,0);
-    }
-    
-    .nav-main>.link-active {
-        border: 1px solid rgb(173,133,13);
     }
     
     .nav-mobile {
         display: -webkit-flex;
 	    display: -ms-flex;
         display: flex;
+        
         flex-direction: column;
         flex: 1 1 100%;
     }
+    
+    .nav-mobile-links a {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+        
+        -webkit-align-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+    }
+    /* ///----------------------------------------------------------------------------------///
+
+                                           !!!
+
+    MOBILE NAVIGATION STYLING END ----------------------- DO NOT TOUCH THE SECTION ABOVE
+                                            
+                                           !!!
+
+    /////----------------------------------------------------------------------------------/// */
     
     .box-3col-cart img {
         max-width: 100%;

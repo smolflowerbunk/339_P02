@@ -53,35 +53,23 @@ header .link-active {
     color: rgb(173,133,13);
 }
 
-/* Main Navigation: Mobile */
+/* ///----------------------------------------------------------------------------------///
 
-/* collapsible styling | referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */
+                                            !!!
+
+    MOBILE NAVIGATION STYLING ---------------------------- DO NOT TOUCH THE SECTION BELOW
+                                            
+                                            !!!
+
+/////----------------------------------------------------------------------------------/// */
+
 .nav-mobile {
     display: none;
-    margin-top: 0.5em;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-mobile>h2 {
-    font-size: 1em;
-    font-weight: 400;
-}
-
-.nav-mobile-links a {
-    border: 1px solid rgb(0,0,0);
-    margin: 0.5em;
-}
-
-.nav-mobile-links a:hover, .nav-mobile-links a:focus {
-    color: rgb(173,133,13);
-    border: 1px solid rgb(173,133,13);
-}
-
-.nav-mobile-links>a:active {
-    color: rgb(0,0,0);
-    border: 1px solid rgb(0,0,0);
-    background-color: rgb(241,234,208);
-}
-
+/* collapsible styling | referenced from https://codeconvey.com/html-expand-collapse-text-without-javascript/ */
 .nav-mobile>input[name="collapse"] {
     display: none;
 }
@@ -92,41 +80,78 @@ header .link-active {
     transition: height 0.5s ease-in;
 }
 
-.nav-mobile-handle {
+.nav-mobile h2 {
     display: block;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 1em;
     border: 1px solid rgb(0,0,0);
-    padding: 0;
 }
 
 .nav-mobile label {
     display: block;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.nav-mobile-content {
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.nav-mobile-content a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    border: 1px solid rgb(0,0,0);
     padding: 1em;
+    margin: 0.5em;
+}
+
+.nav-mobile-content a:first-of-type {
+    margin-top: 0.5em;
+}
+
+.nav-mobile-content a:hover, .nav-mobile-content a:focus {
+    color: rgb(173,133,13);
+    border: 1px solid rgb(173,133,13);
+    -webkit-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+    
 }
 
 .nav-mobile-handle:hover, .nav-mobile-handle:focus {
     color: rgb(173,133,13);
     border: 1px solid rgb(173,133,13);
+    -webkit-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
 }
 
-.nav-mobile-content {
-    padding: 0;
+.nav-mobile-content .link-active {
+    color: rgb(173,133,13);
+    border: 1px solid rgb(173,133,13);
 }
 
-.nav-mobile-handle label:before {
+.nav-mobile-content a:active {
+    color: rgb(0,0,0);
+    border: 1px solid rgb(0,0,0);
+    background-color: rgb(241,234,208);
+}
+
+.nav-mobile .nav-mobile-handle label:before {
     content: "▾";
     display: inline-block;
     margin-right: 0.5em;
     line-height: 1.556em;
     transform: rotate(0deg);
     transform-origin: center;
-    -webkit-transition: transform 0.4s ease-in;
     transition: transform 0.4s ease-in;
 }
 
 .nav-mobile>input[name="collapse"]:checked ~ .nav-mobile-handle label:before {
     transform: rotate(180deg);
     transform-origin: center;
-    -webkit-transition: transform 0.4s ease-out;
     transition: transform 0.4s ease-out;
 }
 
@@ -134,6 +159,17 @@ header .link-active {
   height: 15.5em;
   transition: height 0.5s ease-out;
 }
+
+/* ///----------------------------------------------------------------------------------///
+
+                                           !!!
+
+    MOBILE NAVIGATION STYLING END ----------------------- DO NOT TOUCH THE SECTION ABOVE
+                                            
+                                           !!!
+
+/////----------------------------------------------------------------------------------/// */
+
 
 /* Footer Links */
 footer {

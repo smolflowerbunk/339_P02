@@ -27,6 +27,10 @@ section code {
     padding: 0.5em 0.75em;
 }
 
+.nav-mobile {
+    border-top: 0px;
+}
+
 .ref-pages {
     margin: 0 1em;
 }
