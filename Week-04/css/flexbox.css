@@ -515,6 +515,17 @@ header {
     .banner a {
         font-size: 1em;
     }
+
+    .order-progress {
+        height: 100%;
+        width: auto;
+    }
+
+    .progressbar li {
+        font-size: 0.8em;
+    }
+
+
 }
 
 @media (max-width: 30em) {
